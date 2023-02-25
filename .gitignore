@@ -1,2 +1,10 @@
 core
 /vendor/
+
+# Ignore configuration files that may contain sensitive information.
+web/sites/*/settings*.php
+web/sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+# web/sites/*/files
+# web/sites/*/private
