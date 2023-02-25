@@ -22,7 +22,8 @@
         "drupal/core-recommended": "^10.0",
         "drupal/pathauto": "^1.11",
         "drupal/token": "^1.11",
-        "drupal/verf": "^2.0"
+        "drupal/verf": "^2.0",
+        "drush/drush": "^11.5"
     },
     "conflict": {
         "drupal/drupal": "*"
