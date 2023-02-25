@@ -9,3 +9,7 @@ env_file:
 services:
   appserver:
     type: php:8.1
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
