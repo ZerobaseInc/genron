@@ -3,6 +3,9 @@ recipe: drupal9
 config:
   webroot: web
 
+env_file:
+  - .env
+
 services:
   appserver:
     type: php:8.1
