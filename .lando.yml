@@ -13,3 +13,5 @@ services:
     type: mailhog
     hogfrom:
       - appserver
+  phpmyadmin:
+    type: phpmyadmin
