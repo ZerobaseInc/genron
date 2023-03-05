@@ -1,0 +1,45 @@
+uuid: c29ddedb-5613-40dd-a169-a377473334e3
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ihento.body
+    - field.field.node.ihento.field_cover_art
+    - field.field.node.ihento.field_date
+    - field.field.node.ihento.field_event_keywords
+    - field.field.node.ihento.field_event_type
+    - field.field.node.ihento.field_links
+    - field.field.node.ihento.field_people
+    - field.field.node.ihento.field_series
+    - node.type.ihento
+  module:
+    - text
+    - user
+id: node.ihento.teaser
+targetEntityType: node
+bundle: ihento
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cover_art: true
+  field_date: true
+  field_event_keywords: true
+  field_event_type: true
+  field_links: true
+  field_people: true
+  field_series: true
+  langcode: true

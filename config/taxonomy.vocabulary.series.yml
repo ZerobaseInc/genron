@@ -1,0 +1,8 @@
+uuid: e1845cb8-19b2-4464-b2ae-1896a0a08d1a
+langcode: ja
+status: true
+dependencies: {  }
+name: シリーズ
+vid: series
+description: 刊行物のシリーズ（叢書、レーベル）、記事のシリーズ（連載）、イベントのシリーズ（連続イベント）など
+weight: 0

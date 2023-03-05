@@ -1,0 +1,81 @@
+uuid: 88fbe3c1-3341-4d1b-88e0-9db3fe3dc954
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.kanxingwu.body
+    - field.field.node.kanxingwu.field_isbn
+    - field.field.node.kanxingwu.field_publication_links
+    - field.field.node.kanxingwu.field_publication_series
+    - field.field.node.kanxingwu.field_published_date
+    - field.field.node.kanxingwu.field_publisher
+    - node.type.kanxingwu
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.kanxingwu.default
+targetEntityType: node
+bundle: kanxingwu
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_isbn:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_publication_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_publication_series:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_published_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_publisher:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: 34e6d696-036f-4439-941b-588ad14a132c
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.ihento
+  module:
+    - datetime
+id: node.ihento.field_date
+field_name: field_date
+entity_type: node
+bundle: ihento
+label: 日付
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

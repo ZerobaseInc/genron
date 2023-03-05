@@ -1,0 +1,48 @@
+uuid: 8ef5dce3-d515-4a14-94fe-8dd1dc8ff07f
+langcode: ja
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: gjYvYwMqulNsq7VmScWKOqEUxar9AX0TvG8vfCCguUQ
+id: language-edit
+label: 言語を編集
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.edit_form
+tips:
+  language-edit-overview:
+    id: language-edit-overview
+    plugin: text
+    label: 言語を編集
+    weight: 1
+    body: '<p>このページではあなたのサイトの言語 (カスタム言語も含む) を編集することができます。</p>'
+  language-edit-langcode:
+    id: language-edit-langcode
+    plugin: text
+    label: 言語コード
+    weight: 2
+    selector: '#edit-langcode-view'
+    body: '<p>You cannot change the code of a language on the site, since it is used by the system to keep track of the language.</p>'
+  language-edit-label:
+    id: language-edit-label
+    plugin: text
+    label: 言語名
+    weight: 3
+    selector: '#edit-label'
+    body: '<p>The language name is used throughout the site for all users and is written in English. Names of built-in languages can be translated using the Interface Translation module, and names of both built-in and custom languages can be translated using the Configuration Translation module.</p>'
+  language-edit-direction:
+    id: language-edit-direction
+    plugin: text
+    label: 言語の検出
+    weight: 4
+    selector: '#edit-direction--wrapper--description'
+    body: '<p>Choose if the language is a "Left to right" or "Right to left" language.</p><p>Note that not all themes support "Right to left" layouts, so test your theme if you are using "Right to left".</p>'
+  language-edit-continue:
+    id: language-edit-continue
+    plugin: text
+    label: 続き
+    weight: 5
+    body: '<p>Now that you have an overview of the "Edit language" feature, you can continue by:<ul><li>Editing a language</li><li><a href="[site:url]admin/config/regional/language">Viewing configured languages</a></li></ul></p>'

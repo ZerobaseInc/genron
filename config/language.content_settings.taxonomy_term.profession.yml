@@ -1,0 +1,16 @@
+uuid: 077ae366-f360-46a1-a2cb-332479f2620a
+langcode: ja
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.profession
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.profession
+target_entity_type_id: taxonomy_term
+target_bundle: profession
+default_langcode: site_default
+language_alterable: false

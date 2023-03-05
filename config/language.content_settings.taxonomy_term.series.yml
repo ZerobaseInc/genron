@@ -1,0 +1,16 @@
+uuid: b419e5e4-f552-4879-b48a-04d0b39b49c4
+langcode: ja
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.series
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.series
+target_entity_type_id: taxonomy_term
+target_bundle: series
+default_langcode: site_default
+language_alterable: false

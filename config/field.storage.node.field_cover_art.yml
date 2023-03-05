@@ -1,0 +1,30 @@
+uuid: b7600ccb-9d0c-45dd-a9d4-1660ccbe15ca
+langcode: ja
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_cover_art
+field_name: field_cover_art
+entity_type: node
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

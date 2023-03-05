@@ -1,0 +1,13 @@
+uuid: cb049043-e861-4fc2-9255-2addb87b60a2
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
+id: node_make_sticky_action
+label: コンテンツをリスト上部に固定
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

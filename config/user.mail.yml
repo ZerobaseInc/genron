@@ -1,0 +1,48 @@
+_core:
+  default_config_hash: 6CZIzFifRq3qbdq3n3nDpEOO4hWIQtKOAQNPvGNGKeM
+langcode: ja
+cancel_confirm:
+  subject: '[site:name] での [user:display-name] のアカウントキャンセルのリクエスト'
+  body: |-
+    [user:display-name]
+
+    A request to cancel your account has been made at [site:name].
+
+    You may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:
+
+    [user:cancel-url]
+
+    NOTE: The cancellation of your account is not reversible.
+
+    This link expires in one day and nothing will happen if it is not used.
+
+    --  [site:name] team
+password_reset:
+  subject: '[site:name]での[user:display-name]さんの代替ログイン情報'
+  body: "[user:display-name]さん\r\n\r\n[site:name]で、あなたのアカウントのパスワードリセットが要求されました。\r\n\r\nこのリンクをクリックするか、ブラウザにコピーと貼り付けをすることでサイトにログインすることができます。\r\n\r\n[user:one-time-login-url]\r\n\r\nこのリンクからのログインは一回かぎり有効です。リンク先ではパスワードを設定することができます。使用されなければ一日で有効期限が切れ何も起こりません。\r\n\r\n--  [site:name] チーム"
+register_admin_created:
+  subject: '[site:name]でのアカウントが管理者によって発行されました。'
+  body: "[user:display-name] 様\r\n\r\nサイト[site:name]の管理者が[user:name]さんのアカウントを作成しました。以下のリンクをクリックするか、ブラウザーのアドレスバーにペーストすることでログインできます:\r\n\r\n[user:one-time-login-url]\r\n\r\nこのリンクは一度かぎり利用することができ、パスワードを設定できるページにつながっています。\r\n\r\nパスワードを設定したら次の内容で [site:login-url] からログインすることができるようになります\r\n\r\nユーザー名: [user:name]\r\nパスワード: Your password\r\n\r\n--  [site:name] チーム"
+register_no_approval_required:
+  subject: '[site:name] の [user:display-name] のアカウント詳細'
+  body: "[user:display-name] 様\r\n\r\n[site:name]へご登録くださりありがとうございます。以下のリンクをクリックするか、ブラウザーのアドレスバーにペーストすることでログインできます:\r\n\r\n[user:one-time-login-url]\r\n\r\nこのリンクは一度かぎり利用することができ、パスワードを設定できるページにつながっています。\r\n\r\nパスワードを設定したら次の内容で [site:login-url] からログインすることができるようになります\r\n\r\nユーザー名: [user:name]\r\nパスワード: Your password\r\n\r\n--  [site:name] チーム"
+register_pending_approval:
+  subject: '[site:name] の [user:display-name] のアカウント詳細 (管理者の承認待ち)'
+  body: |-
+    [user:display-name],
+
+    Thank you for registering at [site:name]. Your application for an account is currently pending approval. Once it has been approved, you will receive another email containing information about how to log in, set your password, and other details.
+
+    --  [site:name] team
+register_pending_approval_admin:
+  subject: '[site:name] の [user:display-name] のアカウント詳細 (管理者の承認待ち)'
+  body: "[user:display-name] がアカウントの申請を行いました。\r\n\r\n[user:edit-url]"
+status_activated:
+  subject: '[site:name] での [user:display-name] さんのアカウントの詳細 (承認済)'
+  body: "[user:display-name] 様\r\n\r\n[site:name] でのあなたのアカウントが有効になりました。\r\n\r\nこのリンクをクリックするかコピーしてブラウザに貼り付けるとログインすることができます:\r\n\r\n[user:one-time-login-url]\r\n\r\nこのリンクは一度かぎり利用することができ、パスワードを設定できるページにつながっています。\r\n\r\nパスワードを設定したら次の内容で [site:login-url] からログインすることができるようになります\r\n\r\nユーザー名: [user:account-name]\r\nパスワード: Your password\r\n\r\n--  [site:name] チーム"
+status_blocked:
+  subject: '[user:display-name] の [site:name] の情報 (ブロック)'
+  body: "[user:display-name],\r\n\r\nあなたの[site:name]のアカウンがブロックされました。\r\n\r\n--  [site:name] team"
+status_canceled:
+  subject: '[site:name] での [user:display-name] さんのアカウントの詳細 (キャンセル)'
+  body: "[user:display-name] 様\r\n\r\n[site:name] のあなたのアカウントがキャンセルされました。\r\n\r\n--  [site:name] チーム"

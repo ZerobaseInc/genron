@@ -1,0 +1,55 @@
+uuid: 82aa0cc5-3ebe-4cf4-b3d3-877242b9d622
+langcode: ja
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: Okz8QMYRGvq95nqLGYjp8gLiy93DKoMEzEVZVwEeg4M
+id: language
+label: 言語
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.collection
+tips:
+  language-overview:
+    id: language-overview
+    plugin: text
+    label: 言語
+    weight: 1
+    body: '<p>「言語」ページではこのサイトの言語の追加と編集、削除、並び替えが行えます。</p>'
+  language-add:
+    id: language-add
+    plugin: text
+    label: 言語を追加
+    weight: 2
+    selector: .button-action
+    body: '<p>サイトに言語を追加するには「言語を追加」ボタンを押してください。</p><p>追加した言語は言語リストに表示され、編集や削除ができるようになります。</p>'
+  language-reorder:
+    id: language-reorder
+    plugin: text
+    label: 言語の順番を変更
+    weight: 3
+    selector: .draggable
+    body: '<p>To reorder the languages on your site, use the drag icons next to each language.</p><p>The order shown here is the display order for language lists on the site such as in the language switcher blocks provided by the Interface Translation and Content Translation modules.</p><p>When you are done with reordering the languages, click the "Save configuration" button for the changes to take effect.</p>'
+  language-default:
+    id: language-default
+    plugin: text
+    label: デフォルト言語を設定
+    weight: 4
+    selector: .js-form-item-site-default-language
+    body: '<p>You can change the default language of the site by choosing one of your configured languages as default. The site will use the default language in situations where no choice is made but a language should be set, for example as the language of the displayed interface.</p>'
+  language-operations:
+    id: language-operations
+    plugin: text
+    label: 言語を変更
+    weight: 5
+    selector: .dropbutton-wrapper
+    body: '<p>Operations are provided for editing and deleting your languages.</p><p>You can edit the name and the direction of the language.</p><p>Deleted languages can be added back at a later time. Deleting a language will remove all interface translations associated with it, and content in this language will be set to be language neutral. Note that you cannot delete the default language of the site.</p>'
+  language-continue:
+    id: language-continue
+    plugin: text
+    label: 続き
+    weight: 6
+    body: '<p>Now that you have an overview of the "Languages" page, you can continue by:<ul><li><a href="[site:url]admin/config/regional/language/add">Adding a language</a></li><li>Reordering languages</li><li>Editing a language</li><li>Deleting a language</li></ul></p>'

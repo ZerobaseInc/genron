@@ -1,0 +1,8 @@
+uuid: 20aff094-7d52-4984-8367-50f37c31bd9d
+langcode: ja
+status: true
+dependencies: {  }
+name: 職業
+vid: profession
+description: 'URLエイリアスは "/professions/職業名" とする。'
+weight: 0

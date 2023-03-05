@@ -1,0 +1,29 @@
+uuid: e158685c-7524-49f2-9df7-95a9f8f62d7a
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nationality
+    - node.type.person
+    - taxonomy.vocabulary.guoji
+id: node.person.field_nationality
+field_name: field_nationality
+entity_type: node
+bundle: person
+label: 国籍
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      guoji: guoji
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

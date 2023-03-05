@@ -1,0 +1,29 @@
+uuid: 309bda0c-e8c1-4d42-8dba-a74b5c5b127d
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_series
+    - node.type.ihento
+    - taxonomy.vocabulary.series
+id: node.ihento.field_series
+field_name: field_series
+entity_type: node
+bundle: ihento
+label: シリーズ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      series: series
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

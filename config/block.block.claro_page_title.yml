@@ -1,0 +1,20 @@
+uuid: 21f4f12f-6385-4672-adbe-314a1a5ea7ee
+langcode: ja
+status: true
+dependencies:
+  theme:
+    - claro
+_core:
+  default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
+id: claro_page_title
+theme: claro
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: ページのタイトル
+  label_display: '0'
+  provider: core
+visibility: {  }

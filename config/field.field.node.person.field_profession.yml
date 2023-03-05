@@ -1,0 +1,29 @@
+uuid: 0d501f2f-c111-4d46-a494-7385397be956
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profession
+    - node.type.person
+    - taxonomy.vocabulary.profession
+id: node.person.field_profession
+field_name: field_profession
+entity_type: node
+bundle: person
+label: 職業
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      profession: profession
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: 498cc6e4-4a8e-49a7-b8b5-61c12ffd1c54
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 35CefWbnzaiytcg3acexxz_GTvuwIjYd_ZTcmmR-tXA
+id: zxx
+label: 適用不可
+direction: ltr
+weight: 3
+locked: true

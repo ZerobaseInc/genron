@@ -1,0 +1,10 @@
+uuid: ae2011ea-c438-4f0e-b11b-f05ccef8a311
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M_Bh81osDyUQ4wV0GgU_NdBNqkzM87sLxjaCdFj9mnw
+id: account
+label: ユーザーアカウントメニュー
+description: アクティブなユーザーアカウントに関連したリンク
+locked: true

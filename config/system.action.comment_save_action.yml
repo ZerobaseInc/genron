@@ -1,0 +1,13 @@
+uuid: 298a1d16-aa22-4bef-9a38-7111ff39194c
+langcode: ja
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: lfyE_snmvfg_EQ3VDyhUtGAXgmqtEiqa46I3bTMg8DU
+id: comment_save_action
+label: コメントの保存
+type: comment
+plugin: 'entity:save_action:comment'
+configuration: {  }

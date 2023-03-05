@@ -1,0 +1,60 @@
+uuid: c30cef16-1c8e-40d3-b11c-cf0f92492714
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.literature.body
+    - field.field.node.literature.field_author
+    - field.field.node.literature.field_literature_date
+    - field.field.node.literature.field_literature_references
+    - node.type.literature
+  module:
+    - datetime
+    - text
+    - user
+id: node.literature.default
+targetEntityType: node
+bundle: literature
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_author:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_literature_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_literature_references:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

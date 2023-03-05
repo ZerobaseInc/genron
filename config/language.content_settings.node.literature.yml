@@ -1,0 +1,16 @@
+uuid: c870a6c9-3a1c-4973-824d-4c52b86f8e70
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.literature
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.literature
+target_entity_type_id: node
+target_bundle: literature
+default_langcode: site_default
+language_alterable: false

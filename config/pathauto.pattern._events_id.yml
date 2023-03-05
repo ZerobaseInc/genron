@@ -1,0 +1,22 @@
+uuid: b3ff0045-51b8-4722-a97d-52e9e61be7fd
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+id: _events_id
+label: /events/id
+type: 'canonical_entities:node'
+pattern: 'events/[node:nid]'
+selection_criteria:
+  b1b2e8a2-94a3-4c66-ba9d-085bcee0096a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b1b2e8a2-94a3-4c66-ba9d-085bcee0096a
+    context_mapping:
+      node: node
+    bundles:
+      ihento: ihento
+selection_logic: and
+weight: -5
+relationships: {  }

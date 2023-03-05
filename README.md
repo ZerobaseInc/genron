@@ -21,4 +21,4 @@ Drupal 9ウェブサイトです。「[Docker+Landoで簡単、Drupalローカ�
 
 - `lando start` で起動します。
 - `lando stop` で停止します。
-- `.lando.yml` を書き換えたら、`lando rebuild` で再構築してください。
+- .lando.yml か .env を書き換えた場合は、`lando rebuild` で再構築してください。

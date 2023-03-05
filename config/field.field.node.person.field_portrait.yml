@@ -1,0 +1,38 @@
+uuid: f07d1c69-be37-4cab-a32a-273f2ca1cb4e
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_portrait
+    - node.type.person
+  module:
+    - image
+id: node.person.field_portrait
+field_name: field_portrait
+entity_type: node
+bundle: person
+label: 肖像
+description: 人物の肖像写真。代替テキストには「〇〇の肖像」と入力。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: 肖像写真
+    title: ''
+    width: null
+    height: null
+field_type: image

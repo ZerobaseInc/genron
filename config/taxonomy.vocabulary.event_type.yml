@@ -1,0 +1,8 @@
+uuid: 61c14c62-54d1-42b6-aaa8-6a88922f06ef
+langcode: ja
+status: true
+dependencies: {  }
+name: イベント種別
+vid: event_type
+description: ''
+weight: 0

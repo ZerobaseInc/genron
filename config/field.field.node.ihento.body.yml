@@ -1,0 +1,23 @@
+uuid: bbbd0fa1-d5f1-4569-bacd-49962e0ebee8
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ihento
+  module:
+    - text
+id: node.ihento.body
+field_name: body
+entity_type: node
+bundle: ihento
+label: 概要
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

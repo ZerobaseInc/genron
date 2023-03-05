@@ -1,0 +1,23 @@
+uuid: 3870f453-6508-4a4e-8d66-da9c6ce4e0f0
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.literature
+  module:
+    - text
+id: node.literature.body
+field_name: body
+entity_type: node
+bundle: literature
+label: 本文
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

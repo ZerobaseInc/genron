@@ -1,0 +1,22 @@
+uuid: 3ad2a8a5-ae20-48f3-ae79-8a69ac9e9771
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+id: _literatures_id
+label: /literatures/id
+type: 'canonical_entities:node'
+pattern: 'literatures/[node:nid]'
+selection_criteria:
+  8614a77f-e449-43f7-8962-d003752585e1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8614a77f-e449-43f7-8962-d003752585e1
+    context_mapping:
+      node: node
+    bundles:
+      literature: literature
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,29 @@
+uuid: 81493573-1302-4411-8462-48c9aad03925
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_series
+    - node.type.kanxingwu
+    - taxonomy.vocabulary.series
+id: node.kanxingwu.field_publication_series
+field_name: field_publication_series
+entity_type: node
+bundle: kanxingwu
+label: シリーズ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      series: series
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

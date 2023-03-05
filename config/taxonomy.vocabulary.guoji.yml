@@ -1,0 +1,8 @@
+uuid: 4b25776e-c656-476e-a5ec-f5379fa93700
+langcode: ja
+status: true
+dependencies: {  }
+name: 国籍
+vid: guoji
+description: ''
+weight: 0

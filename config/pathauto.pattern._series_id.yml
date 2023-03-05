@@ -1,0 +1,22 @@
+uuid: 2597b52b-7afd-4693-ace3-c1292dc68d4a
+langcode: ja
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: _series_id
+label: /series/id
+type: 'canonical_entities:taxonomy_term'
+pattern: 'series/[term:tid]'
+selection_criteria:
+  91f129fc-9e30-4336-8874-52022326df71:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 91f129fc-9e30-4336-8874-52022326df71
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      series: series
+selection_logic: and
+weight: -5
+relationships: {  }

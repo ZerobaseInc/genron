@@ -1,0 +1,16 @@
+uuid: 3f089099-c256-482a-a3ef-d4289bf893a6
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.ihento
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.ihento
+target_entity_type_id: node
+target_bundle: ihento
+default_langcode: site_default
+language_alterable: false

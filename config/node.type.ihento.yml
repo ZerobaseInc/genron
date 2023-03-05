@@ -1,0 +1,18 @@
+uuid: 07458881-853e-4e4d-af3b-2ce8c5ab3c30
+langcode: ja
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: イベント
+type: ihento
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

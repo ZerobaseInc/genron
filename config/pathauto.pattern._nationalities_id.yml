@@ -1,0 +1,22 @@
+uuid: 04a73b7e-01e7-4756-9912-a74e0562b878
+langcode: ja
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: _nationalities_id
+label: /nationalities/id
+type: 'canonical_entities:taxonomy_term'
+pattern: 'nationalities/[term:tid]'
+selection_criteria:
+  d1356333-1e09-4b6a-b3d2-2d1ea46cb105:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: d1356333-1e09-4b6a-b3d2-2d1ea46cb105
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      guoji: guoji
+selection_logic: and
+weight: -5
+relationships: {  }

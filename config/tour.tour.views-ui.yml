@@ -1,0 +1,88 @@
+uuid: 8b773f26-9712-4b80-987c-dae1fd21b8b8
+langcode: ja
+status: true
+dependencies:
+  module:
+    - views_ui
+_core:
+  default_config_hash: XIYL1KF7ND2XQRa5AxvEcp8vgCN2kUGiuBNhCgxrPME
+id: views-ui
+label: 編集ページを表示
+module: views_ui
+routes:
+  -
+    route_name: entity.view.edit_form
+  -
+    route_name: entity.view.edit_display_form
+tips:
+  views-main:
+    id: views-main
+    plugin: text
+    label: ビューの設定を管理
+    weight: 1
+    body: 設定を閲覧または編集。
+  views-ui-displays:
+    id: views-ui-displays
+    plugin: text
+    label: このビュー内に表示
+    weight: 2
+    selector: '#views-display-top'
+    body: ディスプレイは結果の表示手段で、例えばページまたはブロックなどです。一つのビューに複数のディスプレイを持たせることが可能で、それらはここにリストされています。
+  views-ui-view-admin:
+    id: views-ui-view-admin
+    plugin: text
+    label: ビューの管理
+    weight: 3
+    position: right
+    selector: '#views-display-extra-actions'
+    body: '管理作業を行う - 詳細の追加やクローンの作成など。ドロップダウンボタンをクリックすると利用可能なオプションを見ることができます。'
+  views-ui-format:
+    id: views-ui-format
+    plugin: text
+    label: 出力書式
+    weight: 4
+    selector: .views-ui-display-tab-bucket.format
+    body: 'どのように結果を出力するかを選択します。例えば、<em>コンテンツ</em>を選択すると、選択されている表示設定を用いて一つ一つのアイテムの全てをで出力できます。<em>フィールド</em>を選択すると、特定のフィールドのみを結果に出力することができます。モジュールをインストールすることで Drupal のベース機能を<em>拡張</em>し、様々なフォーマットを追加することができます。'
+  views-ui-fields:
+    id: views-ui-fields
+    plugin: text
+    label: フィールド
+    weight: 5
+    selector: .views-ui-display-tab-bucket.field
+    body: このビューがフィールドを使う場合はこちらにリストされます。フィールドをクリックして設定を変更することができます。
+  views-ui-filter:
+    id: views-ui-filter
+    plugin: text
+    label: ビューをフィルターする
+    weight: 6
+    selector: .views-ui-display-tab-bucket.filter
+    body: フィルターを追加して、出力される結果を制限できます。例えば、<em>掲載されている</em>コンテンツのみを表示する場合、<em>掲載</em>のフィルターを追加して<em>はい</em>を選択します。
+  views-ui-filter-operations:
+    id: views-ui-filter-operations
+    plugin: text
+    label: アクションをフィルターする
+    weight: 7
+    selector: '.views-ui-display-tab-bucket.filter .dropbutton-widget'
+    body: フィルターを追加、並べ替えまたは削除。
+  views-ui-sorts:
+    id: views-ui-sorts
+    plugin: text
+    label: 条件をソート
+    weight: 8
+    selector: .views-ui-display-tab-bucket.sort
+    body: 結果の出力順序を制御します。設定を行うには有効な並び替えルールをクリックしてください。
+  views-ui-sorts-operations:
+    id: views-ui-sorts-operations
+    plugin: text
+    label: アクションをソート
+    weight: 9
+    selector: '.views-ui-display-tab-bucket.sort .dropbutton-widget'
+    body: ソートのルールを追加、並べ替えまたは削除。
+  views-ui-preview:
+    id: views-ui-preview
+    plugin: text
+    label: プレビュー
+    weight: 10
+    position: right
+    selector: '#preview-submit'
+    body: ビューアウトプットのプレビューを表示。

@@ -1,0 +1,12 @@
+uuid: bbbd70f7-f0c8-4ba4-82fa-98122cd5f786
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Mz9qWr1kUYK0mjRAGDsr5XS6PvtZ24en_7ndt-pyWe4
+id: node.teaser
+label: ティーザー
+targetEntityType: node
+cache: true

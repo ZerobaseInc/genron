@@ -1,0 +1,16 @@
+uuid: 3e3773b7-5aa2-4916-be55-9bdcc3529494
+langcode: ja
+status: true
+dependencies:
+  module:
+    - pathauto
+  enforced:
+    module:
+      - user
+_core:
+  default_config_hash: x_ok_ZsfA4Xk4B_hVW3O4-3PcNoK57nXLz_Dlletidg
+id: pathauto_update_alias_user
+label: URLエイリアスを更新
+type: user
+plugin: pathauto_update_alias
+configuration: {  }

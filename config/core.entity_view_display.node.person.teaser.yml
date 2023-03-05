@@ -1,0 +1,46 @@
+uuid: 81244f58-ca2e-4ce4-87fa-d6a0cf6651a3
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.person.field_body
+    - field.field.node.person.field_keywords
+    - field.field.node.person.field_link
+    - field.field.node.person.field_nationality
+    - field.field.node.person.field_portrait
+    - field.field.node.person.field_profession
+    - image.style.thumbnail
+    - node.type.person
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.person.teaser
+targetEntityType: node
+bundle: person
+mode: teaser
+content:
+  field_portrait:
+    type: image
+    label: above
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_body: true
+  field_keywords: true
+  field_link: true
+  field_nationality: true
+  field_profession: true
+  langcode: true
+  links: true

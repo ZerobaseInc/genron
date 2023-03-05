@@ -1,0 +1,22 @@
+uuid: a1ea01fd-2b6e-4675-8522-d767ea2e060a
+langcode: ja
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: _event_types_id
+label: /event-types/id
+type: 'canonical_entities:taxonomy_term'
+pattern: 'event-types/[term:tid]'
+selection_criteria:
+  ea242987-ae90-44dd-bb98-1adb6be0e3f1:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: ea242987-ae90-44dd-bb98-1adb6be0e3f1
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      event_type: event_type
+selection_logic: and
+weight: -5
+relationships: {  }

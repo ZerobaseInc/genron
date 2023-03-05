@@ -1,0 +1,16 @@
+uuid: d4c66805-303c-4d6c-ae76-46e7d4c28769
+langcode: ja
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_type
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.event_type
+target_entity_type_id: taxonomy_term
+target_bundle: event_type
+default_langcode: site_default
+language_alterable: false

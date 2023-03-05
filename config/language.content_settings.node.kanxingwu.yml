@@ -1,0 +1,16 @@
+uuid: 8a09157f-af71-4781-9588-4f6ba16e6172
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.kanxingwu
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.kanxingwu
+target_entity_type_id: node
+target_bundle: kanxingwu
+default_langcode: site_default
+language_alterable: false

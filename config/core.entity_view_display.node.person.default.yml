@@ -1,0 +1,209 @@
+uuid: 214f2a67-d135-4fdb-bb4e-f45cae67bab1
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.person.field_body
+    - field.field.node.person.field_keywords
+    - field.field.node.person.field_link
+    - field.field.node.person.field_nationality
+    - field.field.node.person.field_portrait
+    - field.field.node.person.field_profession
+    - image.style.medium
+    - node.type.person
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          7e700534-0637-4e8b-b283-fb2459bbd72f:
+            uuid: 7e700534-0637-4e8b-b283-fb2459bbd72f
+            region: content
+            configuration:
+              id: 'extra_field_block:node:person:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: -10
+            additional: {  }
+          4e3e3145-c90c-4991-aa89-80507a1950f2:
+            uuid: 4e3e3145-c90c-4991-aa89-80507a1950f2
+            region: content
+            configuration:
+              id: 'field_block:node:person:field_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: -8
+            additional: {  }
+          3d6da146-e03e-49a9-b936-9052800055a4:
+            uuid: 3d6da146-e03e-49a9-b936-9052800055a4
+            region: content
+            configuration:
+              id: 'field_block:node:person:field_keywords'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: -7
+            additional: {  }
+          6e064183-7b47-4e32-92eb-50aa5720fc07:
+            uuid: 6e064183-7b47-4e32-92eb-50aa5720fc07
+            region: content
+            configuration:
+              id: 'field_block:node:person:field_profession'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: -6
+            additional: {  }
+          ec2cbf77-388d-4f11-a9a7-ee3f2f6e31fb:
+            uuid: ec2cbf77-388d-4f11-a9a7-ee3f2f6e31fb
+            region: content
+            configuration:
+              id: 'field_block:node:person:field_nationality'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: -5
+            additional: {  }
+          a61ec62a-b2cf-413e-b8fc-96b861948da8:
+            uuid: a61ec62a-b2cf-413e-b8fc-96b861948da8
+            region: content
+            configuration:
+              id: 'field_block:node:person:field_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: -4
+            additional: {  }
+          9b5166fb-e34a-479a-87d2-cd09c7239ded:
+            uuid: 9b5166fb-e34a-479a-87d2-cd09c7239ded
+            region: content
+            configuration:
+              id: 'field_block:node:person:field_portrait'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: -9
+            additional: {  }
+        third_party_settings: {  }
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_keywords:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_nationality:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_portrait:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_profession:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

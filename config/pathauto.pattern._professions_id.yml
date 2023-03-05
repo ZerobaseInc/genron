@@ -1,0 +1,22 @@
+uuid: 597c92e9-fdaf-4a2c-9c3b-fc00dfa4cd3b
+langcode: ja
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: _professions_id
+label: /professions/id
+type: 'canonical_entities:taxonomy_term'
+pattern: 'professions/[term:tid]'
+selection_criteria:
+  e5fd8b5e-ad2e-40fd-b09e-b72428f072b2:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: e5fd8b5e-ad2e-40fd-b09e-b72428f072b2
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      profession: profession
+selection_logic: and
+weight: -5
+relationships: {  }

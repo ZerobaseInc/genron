@@ -1,0 +1,22 @@
+uuid: ac2dfd03-5dd4-44b9-9a79-8dd88bc554ec
+langcode: ja
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: olivero_content
+theme: olivero
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: メインページコンテンツ
+  label_display: '0'
+  provider: system
+visibility: {  }
