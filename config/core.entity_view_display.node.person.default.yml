@@ -28,18 +28,18 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          7e700534-0637-4e8b-b283-fb2459bbd72f:
-            uuid: 7e700534-0637-4e8b-b283-fb2459bbd72f
+          abc458dd-9e90-464a-815b-a87864d44bbb:
+            uuid: abc458dd-9e90-464a-815b-a87864d44bbb
             region: content
             configuration:
               id: 'extra_field_block:node:person:links'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-            weight: -10
+            weight: 0
             additional: {  }
-          4e3e3145-c90c-4991-aa89-80507a1950f2:
-            uuid: 4e3e3145-c90c-4991-aa89-80507a1950f2
+          fcd91b7b-d87c-49b0-84c6-fb659e793630:
+            uuid: fcd91b7b-d87c-49b0-84c6-fb659e793630
             region: content
             configuration:
               id: 'field_block:node:person:field_body'
@@ -54,31 +54,26 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: -8
+            weight: 2
             additional: {  }
-          3d6da146-e03e-49a9-b936-9052800055a4:
-            uuid: 3d6da146-e03e-49a9-b936-9052800055a4
+          717463c2-a74d-4512-9e38-d4efd75532ce:
+            uuid: 717463c2-a74d-4512-9e38-d4efd75532ce
             region: content
             configuration:
               id: 'field_block:node:person:field_keywords'
-              label: キーワード
               label_display: '0'
-              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
-                view_mode: view_mode
               formatter:
                 type: entity_reference_label
                 label: above
                 settings:
                   link: true
-                third_party_settings:
-                  field_formatter_class:
-                    class: ''
-            weight: -7
+                third_party_settings: {  }
+            weight: 3
             additional: {  }
-          6e064183-7b47-4e32-92eb-50aa5720fc07:
-            uuid: 6e064183-7b47-4e32-92eb-50aa5720fc07
+          4c97047b-7629-41c1-9e64-34de5b34ed79:
+            uuid: 4c97047b-7629-41c1-9e64-34de5b34ed79
             region: content
             configuration:
               id: 'field_block:node:person:field_profession'
@@ -91,10 +86,10 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: -6
+            weight: 4
             additional: {  }
-          ec2cbf77-388d-4f11-a9a7-ee3f2f6e31fb:
-            uuid: ec2cbf77-388d-4f11-a9a7-ee3f2f6e31fb
+          15ecffb8-10ef-480b-8a49-a324b9b310f2:
+            uuid: 15ecffb8-10ef-480b-8a49-a324b9b310f2
             region: content
             configuration:
               id: 'field_block:node:person:field_nationality'
@@ -107,10 +102,10 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: -5
+            weight: 5
             additional: {  }
-          a61ec62a-b2cf-413e-b8fc-96b861948da8:
-            uuid: a61ec62a-b2cf-413e-b8fc-96b861948da8
+          6df43ab4-3729-4765-8490-64d85ba4fdf6:
+            uuid: 6df43ab4-3729-4765-8490-64d85ba4fdf6
             region: content
             configuration:
               id: 'field_block:node:person:field_link'
@@ -127,10 +122,10 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-            weight: -4
+            weight: 6
             additional: {  }
-          9b5166fb-e34a-479a-87d2-cd09c7239ded:
-            uuid: 9b5166fb-e34a-479a-87d2-cd09c7239ded
+          87992216-9db6-4871-b379-71a6b2b42cfb:
+            uuid: 87992216-9db6-4871-b379-71a6b2b42cfb
             region: content
             configuration:
               id: 'field_block:node:person:field_portrait'
@@ -149,7 +144,7 @@ third_party_settings:
                   image_loading:
                     attribute: lazy
                 third_party_settings: {  }
-            weight: -9
+            weight: 1
             additional: {  }
         third_party_settings: {  }
 id: node.person.default

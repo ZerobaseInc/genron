@@ -40,73 +40,6 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 0
             additional: {  }
-          06520943-9435-4330-abef-f7ee8fee03f7:
-            uuid: 06520943-9435-4330-abef-f7ee8fee03f7
-            region: content
-            configuration:
-              id: 'field_block:node:ihento:body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          b56689ff-459d-4d0a-9ebc-a612d22e5f19:
-            uuid: b56689ff-459d-4d0a-9ebc-a612d22e5f19
-            region: content
-            configuration:
-              id: 'field_block:node:ihento:field_series'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          b111e907-3698-4a77-80a5-4e581b76e728:
-            uuid: b111e907-3698-4a77-80a5-4e581b76e728
-            region: content
-            configuration:
-              id: 'field_block:node:ihento:field_date'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: datetime_default
-                label: above
-                settings:
-                  timezone_override: ''
-                  format_type: medium
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
-          2bdc1b7f-dc36-496c-90bd-e1b0165dbc7f:
-            uuid: 2bdc1b7f-dc36-496c-90bd-e1b0165dbc7f
-            region: content
-            configuration:
-              id: 'field_block:node:ihento:field_cover_art'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: image
-                label: above
-                settings:
-                  image_link: ''
-                  image_style: ''
-                  image_loading:
-                    attribute: lazy
-                third_party_settings: {  }
-            weight: 4
-            additional: {  }
           ceef3f0d-11bd-42a0-92d6-18dc00c508da:
             uuid: ceef3f0d-11bd-42a0-92d6-18dc00c508da
             region: content
@@ -121,26 +54,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 5
-            additional: {  }
-          379d294b-4736-4613-b382-7a8cbc4a957d:
-            uuid: 379d294b-4736-4613-b382-7a8cbc4a957d
-            region: content
-            configuration:
-              id: 'field_block:node:ihento:field_people'
-              label: 登場人物
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: above
-                settings:
-                  view_mode: teaser
-                third_party_settings: {  }
-            weight: 6
+            weight: 10
             additional: {  }
           7dc04913-818e-4fbe-b7a1-66739500f969:
             uuid: 7dc04913-818e-4fbe-b7a1-66739500f969
@@ -160,7 +74,60 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-            weight: 7
+            weight: 11
+            additional: {  }
+          06520943-9435-4330-abef-f7ee8fee03f7:
+            uuid: 06520943-9435-4330-abef-f7ee8fee03f7
+            region: content
+            configuration:
+              id: 'field_block:node:ihento:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          2bdc1b7f-dc36-496c-90bd-e1b0165dbc7f:
+            uuid: 2bdc1b7f-dc36-496c-90bd-e1b0165dbc7f
+            region: content
+            configuration:
+              id: 'field_block:node:ihento:field_cover_art'
+              label: カバーアート
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          b56689ff-459d-4d0a-9ebc-a612d22e5f19:
+            uuid: b56689ff-459d-4d0a-9ebc-a612d22e5f19
+            region: content
+            configuration:
+              id: 'field_block:node:ihento:field_series'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 6
             additional: {  }
           dfc80fe5-5a7b-4e81-8410-b75b2d9ac070:
             uuid: dfc80fe5-5a7b-4e81-8410-b75b2d9ac070
@@ -176,7 +143,46 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 8
+            weight: 7
+            additional: {  }
+          b111e907-3698-4a77-80a5-4e581b76e728:
+            uuid: b111e907-3698-4a77-80a5-4e581b76e728
+            region: content
+            configuration:
+              id: 'field_block:node:ihento:field_date'
+              label: 日付
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          379d294b-4736-4613-b382-7a8cbc4a957d:
+            uuid: 379d294b-4736-4613-b382-7a8cbc4a957d
+            region: content
+            configuration:
+              id: 'field_block:node:ihento:field_people'
+              label: 登場人物
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: teaser
+                third_party_settings: {  }
+            weight: 9
             additional: {  }
         third_party_settings: {  }
 id: node.ihento.default

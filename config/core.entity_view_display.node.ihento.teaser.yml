@@ -12,12 +12,12 @@ dependencies:
     - field.field.node.ihento.field_links
     - field.field.node.ihento.field_people
     - field.field.node.ihento.field_series
+    - image.style.medium
     - node.type.ihento
   module:
     - datetime
     - image
     - layout_builder
-    - text
     - user
 third_party_settings:
   layout_builder:
@@ -28,20 +28,12 @@ targetEntityType: node
 bundle: ihento
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 4
-    region: content
   field_cover_art:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: medium
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -49,20 +41,12 @@ content:
     region: content
   field_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: html_date
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_people:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 3
     region: content
   links:
     settings: {  }
@@ -70,8 +54,10 @@ content:
     weight: 0
     region: content
 hidden:
+  body: true
   field_event_keywords: true
   field_event_type: true
   field_links: true
+  field_people: true
   field_series: true
   langcode: true

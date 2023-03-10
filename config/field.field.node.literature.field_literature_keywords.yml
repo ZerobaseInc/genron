@@ -1,0 +1,29 @@
+uuid: 07e2d88b-b846-4cb1-97cf-88b8cfa1e7c4
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_literature_keywords
+    - node.type.literature
+    - taxonomy.vocabulary.kiwato
+id: node.literature.field_literature_keywords
+field_name: field_literature_keywords
+entity_type: node
+bundle: literature
+label: キーワード
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      kiwato: kiwato
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

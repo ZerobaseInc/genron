@@ -215,7 +215,6 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
           row_class: ''
           default_row_class: true
           uses_fields: false
@@ -232,6 +231,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: ''
       link_display: page_1
       link_url: ''
       header:

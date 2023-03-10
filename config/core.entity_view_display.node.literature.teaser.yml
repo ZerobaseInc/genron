@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.literature.body
     - field.field.node.literature.field_author
     - field.field.node.literature.field_literature_date
+    - field.field.node.literature.field_literature_keywords
     - field.field.node.literature.field_literature_references
     - node.type.literature
   module:
@@ -33,5 +34,6 @@ content:
 hidden:
   field_author: true
   field_literature_date: true
+  field_literature_keywords: true
   field_literature_references: true
   langcode: true

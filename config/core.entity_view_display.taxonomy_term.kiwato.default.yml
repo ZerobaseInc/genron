@@ -1,0 +1,14 @@
+uuid: 888dfe9c-a368-450e-b7a2-41541670c5aa
+langcode: ja
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.kiwato
+id: taxonomy_term.kiwato.default
+targetEntityType: taxonomy_term
+bundle: kiwato
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

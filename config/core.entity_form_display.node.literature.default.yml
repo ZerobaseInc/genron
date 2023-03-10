@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.literature.body
     - field.field.node.literature.field_author
     - field.field.node.literature.field_literature_date
+    - field.field.node.literature.field_literature_keywords
     - field.field.node.literature.field_literature_references
     - node.type.literature
   module:
@@ -48,6 +49,16 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_literature_keywords:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_literature_references:
     type: entity_reference_autocomplete

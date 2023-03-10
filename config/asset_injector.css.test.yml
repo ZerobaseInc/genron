@@ -1,0 +1,30 @@
+uuid: a74826fa-ae34-4a53-a17b-ceec2761e69a
+langcode: ja
+status: true
+dependencies:
+  module:
+    - system
+id: test
+label: 'Override Bootstrap'
+code: |
+  section {
+  	margin-top: 1rem;
+  	margin-bottom: 2rem;
+  }
+
+  .field--label {
+  	font-size: 120%;
+  }
+
+  .field--items .field--item {
+  	display: inline-block;
+  }
+media: all
+preprocess: true
+conditions:
+  current_theme:
+    id: current_theme
+    negate: false
+    theme: bootstrap
+contexts: {  }
+conditions_require_all: true

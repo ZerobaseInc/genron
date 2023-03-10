@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.3",
+        "drupal/asset_injector": "^2.16",
         "drupal/bootstrap": "^3.27",
         "drupal/bootstrap_layout_builder": "^2.1",
         "drupal/bootstrap_layouts": "^5.3",
