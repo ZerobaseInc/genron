@@ -1,5 +1,4 @@
-.env
-core
+/web/core
 /vendor/
 
 # Ignore configuration files that may contain sensitive information.
@@ -7,8 +6,15 @@ core
 # web/sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
-web/sites/*/files
+# web/sites/*/files
+web/sites/*/files/css
+web/sites/*/files/js
+web/sites/*/files/languages
+web/sites/*/files/php
+web/sites/*/files/styles
+web/sites/*/files/translations
 web/sites/*/private
+web/sites/*/files/.htaccess
 
 # Ignore contrib modules
 web/modules/contrib/
