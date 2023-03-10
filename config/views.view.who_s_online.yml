@@ -16,7 +16,7 @@ base_field: uid
 display:
   default:
     id: default
-    display_title: デフォルト
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -66,11 +66,11 @@ display:
         options:
           submit_button: 適用
           reset_button: false
-          reset_button_label: リセット
-          exposed_sorts_label: 並び替え基準
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: 昇順
-          sort_desc_label: 降順
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
