@@ -1,0 +1,38 @@
+uuid: d37d5813-5de8-43b7-8b89-bb395fbe7e01
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_literature_coverart
+    - node.type.literature
+  module:
+    - image
+id: node.literature.field_literature_coverart
+field_name: field_literature_coverart
+entity_type: node
+bundle: literature
+label: 表紙画像
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

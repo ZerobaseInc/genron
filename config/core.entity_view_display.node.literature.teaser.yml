@@ -6,11 +6,20 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.literature.body
     - field.field.node.literature.field_author
+    - field.field.node.literature.field_literature_container
+    - field.field.node.literature.field_literature_coverart
     - field.field.node.literature.field_literature_date
+    - field.field.node.literature.field_literature_isbn
     - field.field.node.literature.field_literature_keywords
+    - field.field.node.literature.field_literature_links
+    - field.field.node.literature.field_literature_publisher
     - field.field.node.literature.field_literature_references
+    - field.field.node.literature.field_literature_type
+    - image.style.medium
     - node.type.literature
   module:
+    - datetime
+    - image
     - text
     - user
 id: node.literature.teaser
@@ -22,18 +31,37 @@ content:
     type: text_summary_or_trimmed
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 300
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
-  links:
-    settings: {  }
+  field_literature_coverart:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 100
+    weight: 0
+    region: content
+  field_literature_date:
+    type: datetime_plain
+    label: hidden
+    settings:
+      timezone_override: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   field_author: true
-  field_literature_date: true
+  field_literature_container: true
+  field_literature_isbn: true
   field_literature_keywords: true
+  field_literature_links: true
+  field_literature_publisher: true
   field_literature_references: true
+  field_literature_type: true
   langcode: true
+  links: true

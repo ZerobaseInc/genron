@@ -1,0 +1,21 @@
+uuid: 4167396f-b892-413a-86b3-3bd1d6731fb3
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_literature_type
+    - node.type.literature
+  module:
+    - options
+id: node.literature.field_literature_type
+field_name: field_literature_type
+entity_type: node
+bundle: literature
+label: 文献種別
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

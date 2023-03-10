@@ -30,16 +30,6 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          46aab2d6-34fd-4710-978f-669787d27976:
-            uuid: 46aab2d6-34fd-4710-978f-669787d27976
-            region: content
-            configuration:
-              id: 'extra_field_block:node:ihento:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 0
-            additional: {  }
           ceef3f0d-11bd-42a0-92d6-18dc00c508da:
             uuid: ceef3f0d-11bd-42a0-92d6-18dc00c508da
             region: content

@@ -1,0 +1,21 @@
+uuid: f954042d-8445-4e34-8be2-c43812510bf9
+langcode: ja
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - taxonomy.vocabulary.kiwato
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.kiwato.full
+targetEntityType: taxonomy_term
+bundle: kiwato
+mode: full
+content: {  }
+hidden:
+  description: true
+  langcode: true

@@ -5,8 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
+    - node.type.article
     - node.type.ihento
     - node.type.literature
+    - node.type.page
+    - node.type.person
   module:
     - node
     - user
@@ -242,8 +245,12 @@ display:
           plugin_id: bundle
           operator: in
           value:
+            all: all
             ihento: ihento
+            person: person
+            page: page
             literature: literature
+            article: article
           group: 1
           exposed: false
           expose:

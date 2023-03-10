@@ -5,12 +5,21 @@ dependencies:
   config:
     - field.field.node.literature.body
     - field.field.node.literature.field_author
+    - field.field.node.literature.field_literature_container
+    - field.field.node.literature.field_literature_coverart
     - field.field.node.literature.field_literature_date
+    - field.field.node.literature.field_literature_isbn
     - field.field.node.literature.field_literature_keywords
+    - field.field.node.literature.field_literature_links
+    - field.field.node.literature.field_literature_publisher
     - field.field.node.literature.field_literature_references
+    - field.field.node.literature.field_literature_type
+    - image.style.thumbnail
     - node.type.literature
   module:
     - datetime
+    - image
+    - link
     - path
     - text
 id: node.literature.default
@@ -44,11 +53,37 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_literature_container:
+    type: entity_reference_autocomplete
+    weight: 28
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_literature_coverart:
+    type: image_image
+    weight: 32
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_literature_date:
     type: datetime_default
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_literature_isbn:
+    type: string_textfield
+    weight: 30
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_literature_keywords:
     type: entity_reference_autocomplete
@@ -57,6 +92,22 @@ content:
     settings:
       match_operator: CONTAINS
       match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_literature_links:
+    type: link_default
+    weight: 27
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_literature_publisher:
+    type: string_textfield
+    weight: 29
+    region: content
+    settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
@@ -69,6 +120,12 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_literature_type:
+    type: options_select
+    weight: 31
+    region: content
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

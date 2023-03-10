@@ -1,0 +1,19 @@
+uuid: 8106602e-d1ba-4bfd-9448-6c0c5d0d5aa0
+langcode: ja
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_literature_links
+field_name: field_literature_links
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

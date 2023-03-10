@@ -5,19 +5,243 @@ dependencies:
   config:
     - field.field.node.literature.body
     - field.field.node.literature.field_author
+    - field.field.node.literature.field_literature_container
+    - field.field.node.literature.field_literature_coverart
     - field.field.node.literature.field_literature_date
+    - field.field.node.literature.field_literature_isbn
     - field.field.node.literature.field_literature_keywords
+    - field.field.node.literature.field_literature_links
+    - field.field.node.literature.field_literature_publisher
     - field.field.node.literature.field_literature_references
+    - field.field.node.literature.field_literature_type
     - node.type.literature
   module:
     - datetime
+    - image
     - layout_builder
+    - layout_discovery
+    - link
+    - options
     - text
     - user
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          25047db3-0820-4bb6-9f1b-ab2230121a7c:
+            uuid: 25047db3-0820-4bb6-9f1b-ab2230121a7c
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_author'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings:
+                  ds:
+                    ds_limit: ''
+            weight: 2
+            additional: {  }
+          cb60ce50-aa21-4f37-a225-b0e6d6acf3cf:
+            uuid: cb60ce50-aa21-4f37-a225-b0e6d6acf3cf
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_literature_date'
+              label: 発行
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: html_date
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          764e0894-a837-4b64-b4d7-9328bbb58f6d:
+            uuid: 764e0894-a837-4b64-b4d7-9328bbb58f6d
+            region: content
+            configuration:
+              id: 'field_block:node:literature:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          10479b1f-d5fc-4ca9-9243-bc75efb3cd77:
+            uuid: 10479b1f-d5fc-4ca9-9243-bc75efb3cd77
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_literature_references'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: teaser
+                  link: false
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          eb35b9c3-c1c3-4e75-b8ed-848aeca897a0:
+            uuid: eb35b9c3-c1c3-4e75-b8ed-848aeca897a0
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_literature_keywords'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          143eaf10-4697-45ac-af18-dea953fbc92e:
+            uuid: 143eaf10-4697-45ac-af18-dea953fbc92e
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_literature_links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          a3d8244b-3ceb-4690-b7ef-aa9221415467:
+            uuid: a3d8244b-3ceb-4690-b7ef-aa9221415467
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_literature_container'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          7e27c00a-8c1d-434f-89e9-5b9f266d73ba:
+            uuid: 7e27c00a-8c1d-434f-89e9-5b9f266d73ba
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_literature_isbn'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+          3f5408ff-4b3d-454c-a022-9fcf8e52af9a:
+            uuid: 3f5408ff-4b3d-454c-a022-9fcf8e52af9a
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_literature_coverart'
+              label: 表紙画像
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          04f6ecb5-ca26-42af-82ff-319550f6691c:
+            uuid: 04f6ecb5-ca26-42af-82ff-319550f6691c
+            region: content
+            configuration:
+              id: 'extra_field_block:node:literature:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          eeb228a1-d79a-4fa8-a3ca-c6f00503ba3e:
+            uuid: eeb228a1-d79a-4fa8-a3ca-c6f00503ba3e
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_literature_publisher'
+              label: 出版社
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          4673bb8a-54df-482d-a44a-0c2460c1c577:
+            uuid: 4673bb8a-54df-482d-a44a-0c2460c1c577
+            region: content
+            configuration:
+              id: 'field_block:node:literature:field_literature_type'
+              label: 文献種別
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: list_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
 id: node.literature.default
 targetEntityType: node
 bundle: literature
@@ -40,6 +264,25 @@ content:
         ds_limit: ''
     weight: 1
     region: content
+  field_literature_container:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_literature_coverart:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 11
+    region: content
   field_literature_date:
     type: datetime_default
     label: hidden
@@ -49,6 +292,14 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_literature_isbn:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
   field_literature_keywords:
     type: entity_reference_label
     label: above
@@ -56,6 +307,26 @@ content:
       link: true
     third_party_settings: {  }
     weight: 5
+    region: content
+  field_literature_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_literature_publisher:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_literature_references:
     type: entity_reference_entity_view
@@ -65,6 +336,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_literature_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
   links:
     settings: {  }

@@ -1,0 +1,28 @@
+uuid: 2e9b0d8e-37a1-46ed-946d-6727dba64383
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_literature_container
+    - node.type.literature
+id: node.literature.field_literature_container
+field_name: field_literature_container
+entity_type: node
+bundle: literature
+label: 収録先
+description: この文献が収録されている刊行物
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      literature: literature
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

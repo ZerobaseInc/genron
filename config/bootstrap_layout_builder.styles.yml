@@ -13,7 +13,7 @@ plugins:
     padding:
       enabled: false
     margin:
-      enabled: true
+      enabled: false
   border:
     border:
       enabled: false

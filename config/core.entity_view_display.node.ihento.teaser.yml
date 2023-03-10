@@ -18,6 +18,7 @@ dependencies:
     - datetime
     - image
     - layout_builder
+    - text
     - user
 third_party_settings:
   layout_builder:
@@ -28,16 +29,24 @@ targetEntityType: node
 bundle: ihento
 mode: teaser
 content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_cover_art:
     type: image
     label: hidden
     settings:
-      image_link: ''
+      image_link: content
       image_style: medium
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_date:
     type: datetime_default
@@ -46,18 +55,13 @@ content:
       timezone_override: ''
       format_type: html_date
     third_party_settings: {  }
-    weight: 2
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
-  body: true
   field_event_keywords: true
   field_event_type: true
   field_links: true
   field_people: true
   field_series: true
   langcode: true
+  links: true

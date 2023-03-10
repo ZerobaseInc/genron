@@ -1,0 +1,19 @@
+uuid: dac1ea39-1017-4a8c-9f02-4869350d07ee
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_literature_publisher
+    - node.type.literature
+id: node.literature.field_literature_publisher
+field_name: field_literature_publisher
+entity_type: node
+bundle: literature
+label: 出版社
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

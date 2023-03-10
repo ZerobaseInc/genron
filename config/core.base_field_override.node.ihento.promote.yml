@@ -1,0 +1,22 @@
+uuid: 75e61f11-e288-41c6-af90-ef350b8ec499
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.ihento
+id: node.ihento.promote
+field_name: promote
+entity_type: node
+bundle: ihento
+label: フロントページへ掲載
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean

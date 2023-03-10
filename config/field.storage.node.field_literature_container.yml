@@ -1,0 +1,19 @@
+uuid: 0af4dcd2-8c84-43b4-ad7d-2133f6eae408
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_literature_container
+field_name: field_literature_container
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 060c867f-4561-4b92-bc5b-5fa5b15fd7c6
+langcode: ja
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_literature_coverart
+field_name: field_literature_coverart
+entity_type: node
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

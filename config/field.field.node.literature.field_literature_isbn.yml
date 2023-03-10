@@ -1,0 +1,19 @@
+uuid: 4b7ebe1a-c47b-4794-a048-e9a3b14f8272
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_literature_isbn
+    - node.type.literature
+id: node.literature.field_literature_isbn
+field_name: field_literature_isbn
+entity_type: node
+bundle: literature
+label: ISBN
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_literature_references
     - node.type.ihento
-    - node.type.kanxingwu
     - node.type.literature
     - node.type.person
 id: node.literature.field_literature_references
@@ -24,7 +23,6 @@ settings:
     target_bundles:
       ihento: ihento
       person: person
-      kanxingwu: kanxingwu
       literature: literature
     sort:
       field: _none

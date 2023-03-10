@@ -1,0 +1,22 @@
+uuid: 36ee5100-15a0-40e3-9c43-404d66a8aa7c
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.literature
+id: node.literature.promote
+field_name: promote
+entity_type: node
+bundle: literature
+label: フロントページへ掲載
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean
