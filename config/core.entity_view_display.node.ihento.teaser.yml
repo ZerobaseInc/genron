@@ -14,8 +14,15 @@ dependencies:
     - field.field.node.ihento.field_series
     - node.type.ihento
   module:
+    - datetime
+    - image
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 id: node.ihento.teaser
 targetEntityType: node
 bundle: ihento
@@ -27,19 +34,44 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 4
+    region: content
+  field_cover_art:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_people:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
-  field_cover_art: true
-  field_date: true
   field_event_keywords: true
   field_event_type: true
   field_links: true
-  field_people: true
   field_series: true
   langcode: true

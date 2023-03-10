@@ -17,7 +17,7 @@ base_field: fid
 display:
   default:
     id: default
-    display_title: デフォルト
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -66,7 +66,7 @@ display:
           entity_type: file
           entity_field: filename
           plugin_id: field
-          label: 名前
+          label: Name
           exclude: false
           alter:
             alter_text: false
@@ -233,7 +233,7 @@ display:
           entity_type: file
           entity_field: status
           plugin_id: field
-          label: 状態
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -456,26 +456,26 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: '次 ›'
-            previous: '‹ 前'
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
             items_per_page: false
-            items_per_page_label: ページ毎の件数
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- 全て -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: オフセット
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
-          submit_button: フィルター
+          submit_button: Filter
           reset_button: false
-          reset_button_label: リセット
-          exposed_sorts_label: 並び替え基準
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: 昇順
-          sort_desc_label: 降順
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -594,7 +594,7 @@ display:
           exposed: true
           expose:
             operator_id: status_op
-            label: 状態
+            label: Status
             description: ''
             use_operator: false
             operator: status_op
@@ -991,16 +991,16 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: '次 ›'
-            previous: '‹ 前'
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
             items_per_page: false
-            items_per_page_label: ページ毎の件数
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- 全て -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: オフセット
+            offset_label: Offset
       empty: {  }
       arguments:
         fid:
@@ -1017,7 +1017,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: すべて
+            title: All
           title_enable: true
           title: '{{ arguments.fid }}のファイル使用情報'
           default_argument_type: fixed

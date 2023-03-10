@@ -12,7 +12,7 @@ id: node.literature.field_literature_references
 field_name: field_literature_references
 entity_type: node
 bundle: literature
-label: 参照
+label: 参考文献
 description: ''
 required: false
 translatable: false

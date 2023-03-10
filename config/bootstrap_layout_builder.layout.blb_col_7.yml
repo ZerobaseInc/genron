@@ -1,0 +1,9 @@
+uuid: daa7bb6a-b8f8-4884-9d7f-5c03e8e0c117
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: u98rfZWR37RTM-zc2zgYi5vUflBcfS-97TmbixnGjsg
+id: blb_col_7
+label: 'Bootstrap 7 Cols'
+number_of_columns: 7

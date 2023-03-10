@@ -43,12 +43,15 @@ third_party_settings:
             region: content
             configuration:
               id: 'field_block:node:person:field_body'
+              label: 紹介文
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: text_default
-                label: above
+                label: hidden
                 settings: {  }
                 third_party_settings: {  }
             weight: -8
@@ -58,15 +61,20 @@ third_party_settings:
             region: content
             configuration:
               id: 'field_block:node:person:field_keywords'
+              label: キーワード
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: entity_reference_label
                 label: above
                 settings:
                   link: true
-                third_party_settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
             weight: -7
             additional: {  }
           6e064183-7b47-4e32-92eb-50aa5720fc07:
@@ -126,12 +134,15 @@ third_party_settings:
             region: content
             configuration:
               id: 'field_block:node:person:field_portrait'
+              label: 肖像
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: image
-                label: above
+                label: hidden
                 settings:
                   image_link: ''
                   image_style: medium

@@ -10,8 +10,14 @@ dependencies:
     - node.type.literature
   module:
     - datetime
+    - layout_builder
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 id: node.literature.default
 targetEntityType: node
 bundle: literature

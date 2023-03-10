@@ -9,7 +9,7 @@ dependencies:
     - node
     - user
 id: literatures_of_person
-label: 文献リスト
+label: 人物の執筆文献リスト
 module: views
 description: ''
 tag: ''
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 執筆文献リスト
+      title: 執筆した文献
       fields:
         title:
           id: title

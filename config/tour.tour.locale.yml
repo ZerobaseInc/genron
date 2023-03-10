@@ -29,7 +29,7 @@ tips:
   locale-search:
     id: locale-search
     plugin: text
-    label: 検索
+    label: Search
     weight: 3
     selector: '#edit-string'
     body: 翻訳したい単語または文章を入力してください。単語の一部分のみを入力することも可能です。

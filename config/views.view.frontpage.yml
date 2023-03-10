@@ -22,7 +22,7 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: デフォルト
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -36,29 +36,29 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: '次 ›'
-            previous: '‹ 前'
-            first: '« 最初'
-            last: '最後 »'
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: ページ毎の件数
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- 全て -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: オフセット
+            offset_label: Offset
           quantity: 9
       exposed_form:
         type: basic
         options:
           submit_button: 適用
           reset_button: false
-          reset_button_label: リセット
-          exposed_sorts_label: 並び替え基準
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: 昇順
-          sort_desc_label: 降順
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -341,7 +341,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: ページ
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:

@@ -17,7 +17,7 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: デフォルト
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -132,7 +132,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: 投稿者
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -150,7 +150,7 @@ display:
           entity_type: node
           entity_field: status
           plugin_id: field
-          label: 状態
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -163,8 +163,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: 非掲載
-            format_custom_true: 掲載
+            format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           id: changed
           table: node_field_data
@@ -172,7 +172,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: field
-          label: 更新
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -195,7 +195,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_operations
-          label: 操作
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -242,20 +242,20 @@ display:
         options:
           items_per_page: 50
           tags:
-            next: '次 ›'
-            previous: '‹ 前'
-            first: '« 最初'
-            last: '最後 »'
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
       exposed_form:
         type: basic
         options:
-          submit_button: フィルター
+          submit_button: Filter
           reset_button: true
-          reset_button_label: リセット
-          exposed_sorts_label: 並び替え基準
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: 昇順
-          sort_desc_label: 降順
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -374,7 +374,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 状態
+            label: Status
             description: ''
             use_operator: false
             operator: status_op
@@ -388,7 +388,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 掲載ステータス
+            label: 'Published status'
             description: ''
             identifier: status
             optional: true
@@ -399,11 +399,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 掲載
+                title: Published
                 operator: '='
                 value: '1'
               2:
-                title: 非掲載
+                title: Unpublished
                 operator: '='
                 value: '0'
         langcode:
@@ -422,7 +422,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: 言語
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -585,7 +585,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: ページ
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:

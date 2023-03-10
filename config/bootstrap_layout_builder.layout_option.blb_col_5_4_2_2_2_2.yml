@@ -1,0 +1,16 @@
+uuid: ea88785e-819c-475c-85be-76184610159e
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DxMfuPCEsPPOXPL4f5XsuJ2Zeb-p8YenJ3qD_YCpEPQ
+id: blb_col_5_4_2_2_2_2
+layout_id: blb_col_5
+label: '4/12 2/12 2/12 2/12 2/12'
+structure: '4 2 2 2 2'
+breakpoints:
+  desktop: desktop
+  tablet: tablet
+  mobile: mobile
+default_breakpoints: null
+weight: -10

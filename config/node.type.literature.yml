@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 文章
+name: 文献
 type: literature
 description: 単行本、雑誌、記事、Webページなど
 help: ''

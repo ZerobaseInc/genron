@@ -8,9 +8,9 @@ dependencies:
     - node
     - user
 id: events_of_person
-label: イベントのリスト
+label: 登壇イベント
 module: views
-description: 人物のイベントリスト
+description: 人物の登壇イベントリスト
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: イベントのリスト
+      title: 登壇したイベント
       fields:
         title:
           id: title

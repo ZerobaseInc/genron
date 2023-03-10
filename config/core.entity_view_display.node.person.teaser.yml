@@ -15,6 +15,7 @@ dependencies:
   module:
     - image
     - layout_builder
+    - text
     - user
 third_party_settings:
   layout_builder:
@@ -25,9 +26,16 @@ targetEntityType: node
 bundle: person
 mode: teaser
 content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_portrait:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: content
       image_style: thumbnail
@@ -36,11 +44,17 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_profession:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
-  field_body: true
   field_keywords: true
   field_link: true
   field_nationality: true
-  field_profession: true
   langcode: true
   links: true

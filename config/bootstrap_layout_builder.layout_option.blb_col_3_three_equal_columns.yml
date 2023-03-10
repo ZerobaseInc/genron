@@ -1,0 +1,16 @@
+uuid: 117bd138-f8fb-4446-883b-1f5ef3b6e459
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2KeA85TJK_Flg86CkW7CquGGfI2SaLLfNNxeIG_gyYg
+id: blb_col_3_three_equal_columns
+layout_id: blb_col_3
+label: 'Three equal columns'
+structure: '4 4 4'
+breakpoints:
+  desktop: desktop
+  tablet: tablet
+  mobile: mobile
+default_breakpoints: null
+weight: -10
