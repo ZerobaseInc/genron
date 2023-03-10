@@ -1,0 +1,41 @@
+{
+  "name": "Genron Omega",
+  "description": "",
+  "env": {
+    "DB_HOST": {
+      "required": true
+    },
+    "DB_NAME": {
+      "required": true
+    },
+    "DB_PASS": {
+      "required": true
+    },
+    "DB_PORT": {
+      "required": true
+    },
+    "DB_USER": {
+      "required": true
+    },
+    "DRUPAL_HASH_SALT": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "ah-mariadb-stackhero"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku-community/apt"
+    }
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "stack": "heroku-22"
+}

@@ -1,3 +1,4 @@
+.env
 /web/core
 /vendor/
 
@@ -7,6 +8,7 @@
 
 # Ignore paths that contain user-generated content.
 # web/sites/*/files
+web/sites/*/files/asset_injector
 web/sites/*/files/css
 web/sites/*/files/js
 web/sites/*/files/languages
