@@ -18,8 +18,7 @@
 ## ローカル開発環境の起動方法
 
 - `lando start` で起動します。
-- `lando drush sql:cli < data/dump.sql` でデータベースを上書き更新します（初回は必須）。
-- `lando drush config:import --source=../config` で（コンテンツは除いて）設定のみを読み込みます。
+- `bin/pull-data.sh` で本番環境のデータベースに同期します。
 
 起動後は下記のようなメッセージが出ます：
 
@@ -45,15 +44,17 @@ Here are some vitals:
 ## サイト構築作業
 
 1. ローカル開発環境で作業します。
-2. 作業の成果を `lando drush config:export --destination=../config` で /config/ に書き出します。
-3. web/sites/default/files以下の画像ファイル等と一緒にGitコミットし、GitHubにプッシュ(`git push origin master`)します。
+2. `bin/export-config.sh` を実行し、作業の成果を /config/ に書き出します。
+3. web/sites/default/files以下の画像ファイル等と一緒に git commit、git pushします。
 
 
 ## コンテンツ制作作業
 
-1. 本番環境で作業します。
-2. 必要に応じてGitコミットします： `heroku run 'drush sql:dump' > data/dump.sql` で本番環境のデータベースを /data/dump.sql に書き出し、Gitコミットし、GitHubにプッシュします。
-3. 必要に応じてローカル環境に同期します： `lando drush sql:cli < data/dump.sql` （※設定情報も同期されます）
+1. ローカル開発環境の設定を /config/ に書き出しておくため、`bin/export-config.sh` を実行します。
+2. 本番環境でコンテンツ制作作業をします。
+3. `bin/pull-data.sh` を実行し、本番環境のデータをローカル開発環境に同期します。
+4. `bin/restore-config.sh` を実行し、ローカル開発環境の設定を /config/ から復元します。
+5. 必要なら git commit、git pushします。
 
 
 ## その他、Landoの操作方法
