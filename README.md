@@ -5,8 +5,7 @@
 
 ## 事前準備
 
-- [Docker](https://www.docker.com/)
-- [Lando](https://lando.dev/)
+- [Docker](https://www.docker.com/)と[Lando](https://lando.dev/)のインストール
 - default.env を .env にリネーム
 
 ## 開発手順
