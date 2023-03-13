@@ -3,6 +3,7 @@ langcode: ja
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.storage.node.field_literature_date
     - node.type.ihento
     - node.type.literature
@@ -297,16 +298,18 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: default
-      row:
-        type: fields
+        type: grid_responsive
         options:
-          default_field_elements: true
-          inline:
-            title: title
-            field_literature_date: field_literature_date
-          separator: ' '
-          hide_empty: false
+          uses_fields: false
+          columns: 3
+          cell_min_width: 150
+          grid_gutter: 15
+          alignment: horizontal
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
       query:
         type: views_query
         options:

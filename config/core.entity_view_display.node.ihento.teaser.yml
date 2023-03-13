@@ -30,12 +30,12 @@ bundle: ihento
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_trimmed
     label: hidden
     settings:
-      trim_length: 300
+      trim_length: 200
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_cover_art:
     type: image
@@ -55,7 +55,7 @@ content:
       timezone_override: ''
       format_type: html_date
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden:
   field_event_keywords: true

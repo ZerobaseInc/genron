@@ -28,10 +28,10 @@ bundle: literature
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_trimmed
     label: hidden
     settings:
-      trim_length: 300
+      trim_length: 200
     third_party_settings: {  }
     weight: 1
     region: content
