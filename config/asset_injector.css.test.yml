@@ -20,6 +20,10 @@ code: |-
   	display: inline-block;
   }
 
+  .field--items .field--item + .field--item::before {
+  	content: ", ";
+  }
+
   .contextual-region .view-header {
   	font-weight: bold;
   	font-size: 120%;
