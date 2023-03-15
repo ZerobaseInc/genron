@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_literature_references
-    - node.type.ihento
     - node.type.literature
-    - node.type.person
 id: node.literature.field_literature_references
 field_name: field_literature_references
 entity_type: node
@@ -21,12 +19,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      ihento: ihento
-      person: person
       literature: literature
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ihento
+    auto_create_bundle: person
 field_type: entity_reference

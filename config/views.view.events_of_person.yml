@@ -190,17 +190,7 @@ display:
       cache:
         type: tag
         options: {  }
-      empty:
-        title:
-          id: title
-          table: views
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: title
-          empty: true
-          title: ' '
+      empty: {  }
       sorts:
         created:
           id: created
