@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 職業
 vid: profession
-description: 'URLエイリアスは "/professions/職業名" とする。'
+description: ''
 weight: 0

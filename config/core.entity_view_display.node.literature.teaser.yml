@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.literature.field_literature_links
     - field.field.node.literature.field_literature_publisher
     - field.field.node.literature.field_literature_references
+    - field.field.node.literature.field_literature_series
     - field.field.node.literature.field_literature_type
     - image.style.medium
     - node.type.literature
@@ -62,6 +63,7 @@ hidden:
   field_literature_links: true
   field_literature_publisher: true
   field_literature_references: true
+  field_literature_series: true
   field_literature_type: true
   langcode: true
   links: true

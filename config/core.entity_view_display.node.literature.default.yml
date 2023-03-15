@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.literature.field_literature_links
     - field.field.node.literature.field_literature_publisher
     - field.field.node.literature.field_literature_references
+    - field.field.node.literature.field_literature_series
     - field.field.node.literature.field_literature_type
     - node.type.literature
   module:
@@ -37,7 +38,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_author:
     type: entity_reference_entity_view
@@ -56,7 +57,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_literature_coverart:
     type: image
@@ -84,7 +85,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
   field_literature_keywords:
     type: entity_reference_label
@@ -92,7 +93,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   field_literature_links:
     type: link
@@ -104,7 +105,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_literature_publisher:
     type: string
@@ -112,7 +113,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_literature_references:
     type: entity_reference_entity_view
@@ -121,14 +122,22 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 9
+    weight: 10
+    region: content
+  field_literature_series:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_literature_type:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   links:
     settings: {  }
