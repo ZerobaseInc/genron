@@ -10,7 +10,7 @@ id: node.ihento.field_people
 field_name: field_people
 entity_type: node
 bundle: ihento
-label: 登壇者
+label: 出演者
 description: ''
 required: false
 translatable: false
