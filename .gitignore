@@ -20,3 +20,5 @@ web/sites/*/files/.htaccess
 
 # Ignore contrib modules
 web/modules/contrib/
+
+config/.htaccess
