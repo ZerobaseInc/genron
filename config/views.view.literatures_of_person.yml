@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_literature_date
-    - node.type.ihento
     - node.type.literature
   module:
     - datetime
@@ -266,7 +265,6 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            ihento: ihento
             literature: literature
           group: 1
           exposed: false

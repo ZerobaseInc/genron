@@ -61,7 +61,7 @@ Here are some vitals:
 
 - `lando stop` で停止します。
 - `lando rebuild` で .lando.yml や .env の更新を反映します。
-
+- `lando destroy` ですべてを破棄します。そこから `lando start`, `lando composer install`, `bin/pull-data.sh` とすれば、ローカル開発環境を初期化（本番環境のクローンに戻すこと）ができます。
 
 ## メモ
 

@@ -155,25 +155,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 4
             additional: {  }
-          379d294b-4736-4613-b382-7a8cbc4a957d:
-            uuid: 379d294b-4736-4613-b382-7a8cbc4a957d
-            region: content
-            configuration:
-              id: 'field_block:node:ihento:field_people'
-              label: 登場人物
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: teaser
-                third_party_settings: {  }
-            weight: 9
-            additional: {  }
         third_party_settings: {  }
 id: node.ihento.default
 targetEntityType: node
