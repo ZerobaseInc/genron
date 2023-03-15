@@ -118,7 +118,7 @@ display:
           admin_label: ''
           plugin_id: title
           empty: true
-          title: ''
+          title: ' '
       sorts: {  }
       arguments:
         field_literature_container_target_id:
