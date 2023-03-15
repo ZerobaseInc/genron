@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_literature_date
+    - node.type.ihento
     - node.type.literature
   module:
     - datetime
@@ -190,17 +191,7 @@ display:
       cache:
         type: tag
         options: {  }
-      empty:
-        title:
-          id: title
-          table: views
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: title
-          empty: true
-          title: ' '
+      empty: {  }
       sorts:
         field_literature_date_value:
           id: field_literature_date_value
@@ -275,6 +266,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
+            ihento: ihento
             literature: literature
           group: 1
           exposed: false

@@ -29,7 +29,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 12
+    weight: 17
     region: content
     settings:
       rows: 9
@@ -45,7 +45,7 @@ content:
     third_party_settings: {  }
   field_author:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -55,7 +55,7 @@ content:
     third_party_settings: {  }
   field_literature_container:
     type: entity_reference_autocomplete
-    weight: 28
+    weight: 13
     region: content
     settings:
       match_operator: CONTAINS
@@ -65,7 +65,7 @@ content:
     third_party_settings: {  }
   field_literature_coverart:
     type: image_image
-    weight: 32
+    weight: 9
     region: content
     settings:
       progress_indicator: throbber
@@ -73,13 +73,13 @@ content:
     third_party_settings: {  }
   field_literature_date:
     type: datetime_default
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   field_literature_isbn:
     type: string_textfield
-    weight: 30
+    weight: 15
     region: content
     settings:
       size: 60
@@ -87,7 +87,7 @@ content:
     third_party_settings: {  }
   field_literature_keywords:
     type: entity_reference_autocomplete
-    weight: 26
+    weight: 16
     region: content
     settings:
       match_operator: CONTAINS
@@ -97,7 +97,7 @@ content:
     third_party_settings: {  }
   field_literature_links:
     type: link_default
-    weight: 27
+    weight: 19
     region: content
     settings:
       placeholder_url: ''
@@ -105,7 +105,7 @@ content:
     third_party_settings: {  }
   field_literature_publisher:
     type: string_textfield
-    weight: 29
+    weight: 14
     region: content
     settings:
       size: 60
@@ -113,7 +113,7 @@ content:
     third_party_settings: {  }
   field_literature_references:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 18
     region: content
     settings:
       match_operator: CONTAINS
@@ -123,7 +123,7 @@ content:
     third_party_settings: {  }
   field_literature_type:
     type: options_select
-    weight: 31
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
