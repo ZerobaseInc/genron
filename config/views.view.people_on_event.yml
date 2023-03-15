@@ -107,7 +107,17 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        title:
+          id: title
+          table: views
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: title
+          empty: true
+          title: ' '
       sorts: {  }
       arguments:
         nid:

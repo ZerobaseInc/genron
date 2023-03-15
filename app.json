@@ -6,19 +6,23 @@
       "required": true
     },
     "DB_NAME": {
-      "required": true
+      "required": true,
+      "value": "genron"
     },
     "DB_PASS": {
       "required": true
     },
     "DB_PORT": {
-      "required": true
+      "required": true,
+      "value": "3306"
     },
     "DB_USER": {
-      "required": true
+      "required": true,
+      "value": "root"
     },
     "DRUPAL_HASH_SALT": {
-      "required": true
+      "required": true,
+      "generator": "secret"
     }
   },
   "formation": {
@@ -32,10 +36,12 @@
   "buildpacks": [
     {
       "url": "heroku-community/apt"
-    }
+    },
     {
       "url": "heroku/php"
     }
   ],
-  "stack": "heroku-22"
+  "stack": "heroku-22",
+  "scripts": {
+  }
 }
