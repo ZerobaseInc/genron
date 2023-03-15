@@ -43,6 +43,5 @@
   ],
   "stack": "heroku-22",
   "scripts": {
-    "postdeploy": "bin/heroku-postdeploy.sh"
   }
 }
