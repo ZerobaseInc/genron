@@ -5,11 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.person
+    - taxonomy.vocabulary.profession
   module:
     - node
+    - taxonomy
     - user
 id: view_people
-label: 人物リスト
+label: 人物のリスト
 module: views
 description: ''
 tag: ''
@@ -203,6 +205,57 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        field_profession_target_id:
+          id: field_profession_target_id
+          table: node__field_profession
+          field: field_profession_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_profession_target_id_op
+            label: 職業
+            description: ''
+            use_operator: false
+            operator: field_profession_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_profession_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: '職業 (field_profession)'
+            description: null
+            identifier: field_profession_target_id
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
+          reduce_duplicates: false
+          vid: profession
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: grid_responsive
         options:
@@ -232,7 +285,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -249,7 +304,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

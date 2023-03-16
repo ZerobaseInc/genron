@@ -13,6 +13,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.person
   module:
+    - ds
     - image
     - layout_builder
     - text
@@ -48,8 +49,10 @@ content:
     type: entity_reference_label
     label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
     weight: 1
     region: content
 hidden:
