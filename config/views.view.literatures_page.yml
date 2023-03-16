@@ -8,6 +8,7 @@ dependencies:
   module:
     - datetime
     - node
+    - options
     - user
 id: literatures_page
 label: 文献のリスト
@@ -178,6 +179,49 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        field_literature_type_value:
+          id: field_literature_type_value
+          table: node__field_literature_type
+          field: field_literature_type_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_literature_type_value_op
+            label: 文献種別
+            description: ''
+            use_operator: false
+            operator: field_literature_type_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_literature_type_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
       style:
         type: grid_responsive
         options:
@@ -207,6 +251,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
@@ -224,6 +269,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
