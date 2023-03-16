@@ -4,6 +4,7 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.kiwato.field_pronunciation
     - taxonomy.vocabulary.kiwato
   module:
     - layout_builder
@@ -18,4 +19,5 @@ mode: full
 content: {  }
 hidden:
   description: true
+  field_pronunciation: true
   langcode: true

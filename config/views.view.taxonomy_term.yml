@@ -24,6 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
+      title: 関連するコンテンツ
       fields: {  }
       pager:
         type: mini
@@ -213,14 +214,17 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: default
+        type: grid_responsive
         options:
-          row_class: ''
-          default_row_class: true
           uses_fields: false
+          columns: 4
+          cell_min_width: 150
+          grid_gutter: 10
+          alignment: horizontal
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       query:
         type: views_query

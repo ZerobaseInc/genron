@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: キーワード
 vid: kiwato
-description: コンテンツに関わりの深い概念やトピック
+description: 人文知の専門用語、テクニカルターム
 weight: 0

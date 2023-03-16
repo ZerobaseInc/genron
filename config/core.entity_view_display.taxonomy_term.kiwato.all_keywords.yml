@@ -1,0 +1,38 @@
+uuid: 1b258644-56bf-4832-8356-ae50068bf3c5
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.all_keywords
+    - field.field.taxonomy_term.kiwato.field_pronunciation
+    - taxonomy.vocabulary.kiwato
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.kiwato.all_keywords
+targetEntityType: taxonomy_term
+bundle: kiwato
+mode: all_keywords
+content:
+  description:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pronunciation:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
