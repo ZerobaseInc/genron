@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 id: literatures_page
-label: 文献リスト
+label: 文献のリスト
 module: views
 description: ''
 tag: ''

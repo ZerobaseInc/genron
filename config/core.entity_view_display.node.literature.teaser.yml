@@ -34,7 +34,15 @@ content:
     settings:
       trim_length: 200
     third_party_settings: {  }
-    weight: 1
+    weight: 2
+    region: content
+  field_author:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_literature_coverart:
     type: image
@@ -45,7 +53,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_literature_date:
     type: datetime_plain
@@ -53,10 +61,9 @@ content:
     settings:
       timezone_override: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
-  field_author: true
   field_literature_container: true
   field_literature_isbn: true
   field_literature_keywords: true
