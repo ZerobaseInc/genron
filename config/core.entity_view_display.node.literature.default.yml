@@ -93,7 +93,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 11
+    weight: 13
     region: content
   field_literature_links:
     type: link

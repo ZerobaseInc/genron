@@ -1,0 +1,22 @@
+uuid: 031b7f08-8201-4846-98b9-41f6d823de9b
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.keyword
+id: node.keyword.promote
+field_name: promote
+entity_type: node
+bundle: keyword
+label: フロントページへ掲載
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean

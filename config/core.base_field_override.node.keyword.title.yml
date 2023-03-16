@@ -1,0 +1,18 @@
+uuid: 803f3110-9a13-4b14-8e16-560b52be0107
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.keyword
+id: node.keyword.title
+field_name: title
+entity_type: node
+bundle: keyword
+label: 見出し語
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

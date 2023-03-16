@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:'
+    parent: 'main:menu_link_content:4714543e-0d6d-419d-a151-906eaf44e5bb'
 name: 文献
 type: literature
 description: 単行本、雑誌、記事、Webページなど

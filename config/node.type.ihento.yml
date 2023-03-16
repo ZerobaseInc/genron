@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:'
+    parent: 'main:menu_link_content:c4d91f21-2f81-423c-a607-afff057ce00b'
 name: イベント
 type: ihento
 description: ''

@@ -1,0 +1,23 @@
+uuid: 98084f6a-aaa1-4b01-a087-2a3348690a7a
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.keyword
+  module:
+    - text
+id: node.keyword.body
+field_name: body
+entity_type: node
+bundle: keyword
+label: 説明
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

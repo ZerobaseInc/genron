@@ -1,0 +1,18 @@
+uuid: bf7aa9a8-99dd-479a-b3b7-2764ecb00da4
+langcode: ja
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:menu_link_content:d0a56b72-c739-4ad2-9908-974d34e438f3'
+name: キーワード
+type: keyword
+description: 人文知キーワード
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

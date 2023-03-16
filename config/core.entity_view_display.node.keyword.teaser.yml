@@ -1,0 +1,36 @@
+uuid: 12502d23-79f6-4cb2-80e4-b9ee43d3829c
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.keyword.body
+    - field.field.node.keyword.field_pronunciation
+    - node.type.keyword
+  module:
+    - text
+    - user
+id: node.keyword.teaser
+targetEntityType: node
+bundle: keyword
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pronunciation:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

@@ -1,0 +1,34 @@
+uuid: 6cf1a219-eb43-49b2-b136-6fb873704b20
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.keyword.body
+    - field.field.node.keyword.field_pronunciation
+    - node.type.keyword
+  module:
+    - text
+    - user
+id: node.keyword.default
+targetEntityType: node
+bundle: keyword
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pronunciation:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true
