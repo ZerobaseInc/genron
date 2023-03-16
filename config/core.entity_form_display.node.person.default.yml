@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.person.field_body
-    - field.field.node.person.field_keywords
     - field.field.node.person.field_link
     - field.field.node.person.field_nationality
+    - field.field.node.person.field_person_keywords
     - field.field.node.person.field_portrait
     - field.field.node.person.field_profession
     - image.style.thumbnail
@@ -37,16 +37,6 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  field_keywords:
-    type: entity_reference_autocomplete
-    weight: 10
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_link:
     type: link_default
     weight: 13
@@ -58,6 +48,16 @@ content:
   field_nationality:
     type: entity_reference_autocomplete
     weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_person_keywords:
+    type: entity_reference_autocomplete
+    weight: 26
     region: content
     settings:
       match_operator: CONTAINS

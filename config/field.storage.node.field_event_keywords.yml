@@ -1,16 +1,15 @@
-uuid: d3752859-92fc-42a6-91a0-408959707a2f
+uuid: cf05556d-a2f1-4ab2-89d5-0c88474dbeef
 langcode: ja
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
 id: node.field_event_keywords
 field_name: field_event_keywords
 entity_type: node
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: node
 module: core
 locked: false
 cardinality: -1

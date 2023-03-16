@@ -1,0 +1,22 @@
+uuid: 144a9d12-d837-4ed4-9d5b-7bdb6e3aa7d6
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+id: _keywords_id
+label: /keywords/id
+type: 'canonical_entities:node'
+pattern: 'keywords/[node:nid]'
+selection_criteria:
+  2102089a-2a29-4b38-8ee9-4fe37ea19be7:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 2102089a-2a29-4b38-8ee9-4fe37ea19be7
+    context_mapping:
+      node: node
+    bundles:
+      keyword: keyword
+selection_logic: and
+weight: -5
+relationships: {  }

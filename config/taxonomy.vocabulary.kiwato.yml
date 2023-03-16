@@ -1,8 +1,0 @@
-uuid: 41786154-eabf-4fa7-8e10-655a56629fe1
-langcode: ja
-status: true
-dependencies: {  }
-name: キーワード
-vid: kiwato
-description: コンテンツに関わりの深い概念やトピック
-weight: 0

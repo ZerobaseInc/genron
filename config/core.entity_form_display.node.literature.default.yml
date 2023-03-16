@@ -88,7 +88,7 @@ content:
     third_party_settings: {  }
   field_literature_keywords:
     type: entity_reference_autocomplete
-    weight: 17
+    weight: 26
     region: content
     settings:
       match_operator: CONTAINS

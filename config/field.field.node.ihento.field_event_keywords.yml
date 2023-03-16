@@ -1,11 +1,11 @@
-uuid: f80c4095-ef11-4270-9751-6be3e7e73cf8
+uuid: a335cbad-9538-42e5-92d6-a064cecfe582
 langcode: ja
 status: true
 dependencies:
   config:
     - field.storage.node.field_event_keywords
     - node.type.ihento
-    - taxonomy.vocabulary.kiwato
+    - node.type.keyword
 id: node.ihento.field_event_keywords
 field_name: field_event_keywords
 entity_type: node
@@ -17,13 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:node'
   handler_settings:
     target_bundles:
-      kiwato: kiwato
+      keyword: keyword
     sort:
-      field: name
-      direction: asc
+      field: _none
+      direction: ASC
     auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference

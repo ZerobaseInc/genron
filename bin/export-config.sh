@@ -1,5 +1,8 @@
 #!/bin/sh
 echo "Exporting config..."
+if [ -d ../config-tmp ]; then
+  rm -rf ../config-tmp
+fi
 lando drush config:export --destination=../config-tmp
 if [ $? -ne 0 ]; then
   echo "Error: Failed to export config."

@@ -122,22 +122,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 6
             additional: {  }
-          dfc80fe5-5a7b-4e81-8410-b75b2d9ac070:
-            uuid: dfc80fe5-5a7b-4e81-8410-b75b2d9ac070
-            region: content
-            configuration:
-              id: 'field_block:node:ihento:field_event_keywords'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 7
-            additional: {  }
           b111e907-3698-4a77-80a5-4e581b76e728:
             uuid: b111e907-3698-4a77-80a5-4e581b76e728
             region: content
@@ -157,6 +141,22 @@ third_party_settings:
                   format_type: medium
                 third_party_settings: {  }
             weight: 4
+            additional: {  }
+          3a708633-c8d3-476d-8173-f47e259ee6ef:
+            uuid: 3a708633-c8d3-476d-8173-f47e259ee6ef
+            region: content
+            configuration:
+              id: 'field_block:node:ihento:field_event_keywords'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 12
             additional: {  }
         third_party_settings: {  }
 id: node.ihento.default

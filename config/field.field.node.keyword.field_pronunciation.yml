@@ -1,0 +1,19 @@
+uuid: 3bf8c45a-a1b9-4c1b-8920-4ffea692b1d4
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pronunciation
+    - node.type.keyword
+id: node.keyword.field_pronunciation
+field_name: field_pronunciation
+entity_type: node
+bundle: keyword
+label: 読み
+description: ひらがな入力
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

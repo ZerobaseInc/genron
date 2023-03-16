@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.person.field_body
-    - field.field.node.person.field_keywords
     - field.field.node.person.field_link
     - field.field.node.person.field_nationality
+    - field.field.node.person.field_person_keywords
     - field.field.node.person.field_portrait
     - field.field.node.person.field_profession
     - image.style.medium
@@ -55,22 +55,6 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             weight: 2
-            additional: {  }
-          717463c2-a74d-4512-9e38-d4efd75532ce:
-            uuid: 717463c2-a74d-4512-9e38-d4efd75532ce
-            region: content
-            configuration:
-              id: 'field_block:node:person:field_keywords'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 3
             additional: {  }
           4c97047b-7629-41c1-9e64-34de5b34ed79:
             uuid: 4c97047b-7629-41c1-9e64-34de5b34ed79
@@ -146,6 +130,22 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
+          4f5d5fa8-47fb-4e4b-81a4-133b4c5d7bb9:
+            uuid: 4f5d5fa8-47fb-4e4b-81a4-133b4c5d7bb9
+            region: content
+            configuration:
+              id: 'field_block:node:person:field_person_keywords'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
         third_party_settings: {  }
 id: node.person.default
 targetEntityType: node
@@ -158,14 +158,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_keywords:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 3
     region: content
   field_link:
     type: link
@@ -186,6 +178,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 5
+    region: content
+  field_person_keywords:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_portrait:
     type: image

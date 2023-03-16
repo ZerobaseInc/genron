@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:'
+    parent: 'main:menu_link_content:98885b01-6461-4895-b111-b7a86124948a'
 name: 人物
 type: person
 description: ''
