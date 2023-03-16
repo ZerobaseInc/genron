@@ -21,13 +21,13 @@
 
 genron.co.jp というドメイン名は、ウェブ上の人文知オーソリティに相応しい。以下のようなURLパターンによって「名は体を表す」：
 
-- https://www.genron.co.jp/people/hazuma  
+- [https://www.genron.co.jp/people/hazuma](http://genron.herokuapp.com/people/hazuma)  
   → //言論/人物/東浩紀
-- https://www.genron.co.jp/literatures/otaku  
+- [https://www.genron.co.jp/literatures/otaku](http://genron.herokuapp.com/literatures/otaku)  
   → //言論/文献/動物化するポストモダン
-- https://www.genron.co.jp/events/genron-cafe-20221027  
+- [https://www.genron.co.jp/events/genron-cafe-20221027](http://genron.herokuapp.com/events/genron-cafe-20221027)  
   → //言論/イベント/ゲンロンカフェ「シラスはウェブのなにをやりなおすのか」
-- https://www.genron.co.jp/keywords/correctibility  
+- [https://www.genron.co.jp/keywords/correctibility](http://genron.herokuapp.com/keywords/correctibility)  
   → //言論/キーワード/訂正可能性
 
 
