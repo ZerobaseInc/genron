@@ -9,4 +9,6 @@ fi
 mv -f data/tmp_dmp.sql data/dump.sql
 echo "Importing data into local database..."
 lando drush sql:cli < data/dump.sql
+echo "Rebuilding cache..."
+lando drush cache:rebuild
 echo "Done."
