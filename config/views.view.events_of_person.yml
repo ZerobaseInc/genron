@@ -13,7 +13,7 @@ dependencies:
 id: events_of_person
 label: 人物の登壇イベントリスト
 module: views
-description: 人物の登壇イベントリスト
+description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -190,7 +190,17 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        title:
+          id: title
+          table: views
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: title
+          empty: true
+          title: ' '
       sorts:
         created:
           id: created

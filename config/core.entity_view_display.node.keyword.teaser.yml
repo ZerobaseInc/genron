@@ -21,16 +21,9 @@ content:
     settings:
       trim_length: 150
     third_party_settings: {  }
-    weight: 1
-    region: content
-  field_pronunciation:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_pronunciation: true
   langcode: true
   links: true

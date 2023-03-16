@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.literature.field_literature_references
     - field.field.node.literature.field_literature_series
     - field.field.node.literature.field_literature_type
+    - image.style.large
     - node.type.literature
   module:
     - datetime
@@ -64,7 +65,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: large
       image_loading:
         attribute: lazy
     third_party_settings: {  }

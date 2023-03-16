@@ -111,6 +111,8 @@ Here are some vitals:
 2. `bin/export-config.sh` を実行し、作業の成果を /config/ に書き出します。
 3. web/sites/default/files以下の画像ファイル等と一緒に git commit、git pushします。
 
+なお、本番環境で設定を変更した場合は、 `bin/pull-data.sh` と `bin/export-config.sh` を実行してから `git commit` してください。
+
 
 ### コンテンツ制作作業
 
