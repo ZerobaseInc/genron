@@ -65,8 +65,9 @@ genron.co.jp というドメイン名は、ウェブ上の人文知オーソリ�
 
 ### 事前準備
 
-- [Docker](https://www.docker.com/)と[Lando](https://lando.dev/)のインストール
-- default.env を .env にリネーム
+- [Docker](https://www.docker.com/)、[Lando](https://lando.dev/)、[Heroku CLI]()のインストール
+- `cp default.env .env` して `S3_ACCESS_KEY` と `S3_SECRET_KEY` を設定
+- `heroku git:remote -a genron`
 
 ### 起動手順
 
