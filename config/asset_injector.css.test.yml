@@ -25,8 +25,8 @@ code: |-
   	display: inline-block;
   }
 
-  :not(.field--type-entity-reference) > .field--items > .field--item + .field--item::before {
-  	content: ", ";
+  .field--items > .field--item + .field--item {
+  	margin-left: 1rem;
   }
 
   .contextual-region .view-header {
