@@ -19,6 +19,7 @@ dependencies:
     - node.type.literature
   module:
     - datetime
+    - ds
     - image
     - layout_builder
     - link
@@ -53,10 +54,11 @@ content:
     weight: 2
     region: content
   field_literature_container:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: above
     settings:
-      link: true
+      view_mode: teaser
+      link: false
     third_party_settings: {  }
     weight: 6
     region: content
@@ -94,7 +96,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 13
+    weight: 11
     region: content
   field_literature_links:
     type: link
@@ -106,7 +108,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 12
+    weight: 10
     region: content
   field_literature_publisher:
     type: string
@@ -122,8 +124,10 @@ content:
     settings:
       view_mode: teaser
       link: false
-    third_party_settings: {  }
-    weight: 10
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    weight: 12
     region: content
   field_literature_series:
     type: entity_reference_label

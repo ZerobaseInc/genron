@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.ihento.field_event_type
     - field.field.node.ihento.field_links
     - field.field.node.ihento.field_people
+    - field.field.node.ihento.field_related_contents
     - field.field.node.ihento.field_series
     - image.style.medium
     - node.type.ihento
@@ -62,6 +63,7 @@ hidden:
   field_event_type: true
   field_links: true
   field_people: true
+  field_related_contents: true
   field_series: true
   langcode: true
   links: true

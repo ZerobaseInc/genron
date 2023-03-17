@@ -1,0 +1,38 @@
+uuid: 5f6c3e35-3499-460e-b34f-48d0d9d87ff3
+langcode: ja
+status: true
+dependencies:
+  config:
+    - views.view.literature_back_reference
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__literature_back_reference_block_1
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:literature_back_reference-block_1'
+settings:
+  id: 'views_block:literature_back_reference-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/literatures/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      literature: literature

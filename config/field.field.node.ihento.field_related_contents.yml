@@ -1,0 +1,32 @@
+uuid: 8561726f-312e-4a95-a16d-2b9cf3b340d2
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_contents
+    - node.type.ihento
+    - node.type.literature
+    - node.type.person
+id: node.ihento.field_related_contents
+field_name: field_related_contents
+entity_type: node
+bundle: ihento
+label: 関連コンテンツ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ihento: ihento
+      person: person
+      literature: literature
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ihento
+field_type: entity_reference

@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 id: shouluwenxianrisuto
-label: 収録文献リスト
+label: 文献の収録文献リスト
 module: views
 description: ''
 tag: ''
@@ -69,7 +69,7 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
@@ -90,7 +90,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 50
+          items_per_page: 0
       exposed_form:
         type: basic
         options:
@@ -108,17 +108,7 @@ display:
       cache:
         type: tag
         options: {  }
-      empty:
-        title:
-          id: title
-          table: views
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: title
-          empty: true
-          title: ' '
+      empty: {  }
       sorts: {  }
       arguments:
         field_literature_container_target_id:
@@ -189,20 +179,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: 収録文献
-            format: basic_html
-          tokenize: false
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -222,6 +199,7 @@ display:
     display_options:
       display_extenders: {  }
       block_description: ''
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

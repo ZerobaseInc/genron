@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_event_type
     - node.type.ihento
     - taxonomy.vocabulary.event_type
+  content:
+    - 'taxonomy_term:event_type:ca28ea60-ea1e-4426-b7b9-8c79c1866e69'
 id: node.ihento.field_event_type
 field_name: field_event_type
 entity_type: node
@@ -14,7 +16,9 @@ label: イベント種別
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: ca28ea60-ea1e-4426-b7b9-8c79c1866e69
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
@@ -24,6 +28,6 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

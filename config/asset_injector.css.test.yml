@@ -25,7 +25,7 @@ code: |-
   	display: inline-block;
   }
 
-  .field--items .field--item + .field--item::before {
+  :not(.field--type-entity-reference) > .field--items > .field--item + .field--item::before {
   	content: ", ";
   }
 

@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.ihento.field_event_type
     - field.field.node.ihento.field_links
     - field.field.node.ihento.field_people
+    - field.field.node.ihento.field_related_contents
     - field.field.node.ihento.field_series
     - image.style.thumbnail
     - node.type.ihento
@@ -85,6 +86,16 @@ content:
   field_people:
     type: entity_reference_autocomplete
     weight: 126
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_related_contents:
+    type: entity_reference_autocomplete
+    weight: 129
     region: content
     settings:
       match_operator: CONTAINS

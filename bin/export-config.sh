@@ -9,7 +9,7 @@ if [ $? -ne 0 ]; then
   rm -rf ../config-tmp
   exit 1
 fi
-rm -r config
+rm -rf config
 mv -f config-tmp config
 echo "Done."
 echo "Now you can...
