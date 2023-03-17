@@ -90,9 +90,8 @@ Here are some vitals:
 この段階では、まだアプリが正常に動作しません。引き続き下記の手順を進めてください：
 
 1. `lando composer install` で依存モジュールをインストールします。
-2. `lando drush sql:cli < data/dump.sql` でデータをインポートします。
-3. `lando drush config:import --source=../config` でローカルの設定(/config/)を反映します。
-4. `lando drush cache:rebuild` でキャッシュを再構築します。これで準備完了です。
+2. `bin/pull-data.sh` でデータをインポートします。
+3. `bin/restore-config.sh` でローカルの設定(/config/)を反映し、キャッシュを再構築します。これで準備完了です。
 
 前述の 'http://localhost' から始まるリンクを開いてください。この例の場合は `http://localhost:58722` となります。ユーザーadmin、パスワードadminでログインできます。
 
