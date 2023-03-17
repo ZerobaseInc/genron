@@ -828,3 +828,12 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 $settings['config_sync_directory'] = '../config';
+
+/*
+ * Amazon S3 settings.
+ */
+$settings['s3fs.access_key'] = getenv('S3_ACCESS_KEY');
+$settings['s3fs.secret_key'] = getenv('S3_SECRET_KEY');
+$config['s3fs.settings']['bucket'] = getenv('S3_BUCKET');
+$settings['s3fs.region'] = getenv('S3_REGION');
+$settings['s3fs.upload_as_private'] = TRUE;
