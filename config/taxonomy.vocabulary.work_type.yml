@@ -1,0 +1,8 @@
+uuid: 6e3e4a91-3d4b-4d34-9459-7e6e59a72a3c
+langcode: ja
+status: true
+dependencies: {  }
+name: 作品種別
+vid: work_type
+description: ''
+weight: 0
