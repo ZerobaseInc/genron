@@ -1,16 +1,16 @@
-uuid: e158685c-7524-49f2-9df7-95a9f8f62d7a
+uuid: 773b1b36-b87e-437c-8a3d-c40511d16a50
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.storage.node.field_nationality
-    - node.type.person
+    - field.storage.node.field_event_place
+    - node.type.ihento
     - taxonomy.vocabulary.changsuo
-id: node.person.field_nationality
-field_name: field_nationality
+id: node.ihento.field_event_place
+field_name: field_event_place
 entity_type: node
-bundle: person
-label: 活動拠点
+bundle: ihento
+label: 場所
 description: ''
 required: false
 translatable: false
@@ -25,5 +25,5 @@ settings:
       field: name
       direction: asc
     auto_create: true
-    auto_create_bundle: guoji
+    auto_create_bundle: ''
 field_type: entity_reference

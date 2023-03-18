@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.ihento.field_cover_art
     - field.field.node.ihento.field_date
     - field.field.node.ihento.field_event_keywords
+    - field.field.node.ihento.field_event_place
     - field.field.node.ihento.field_event_type
     - field.field.node.ihento.field_links
     - field.field.node.ihento.field_people
@@ -60,6 +61,7 @@ content:
     region: content
 hidden:
   field_event_keywords: true
+  field_event_place: true
   field_event_type: true
   field_links: true
   field_people: true

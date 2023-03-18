@@ -1,0 +1,22 @@
+uuid: 5327557b-6b1c-4c82-9356-899f7a7ab37e
+langcode: ja
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: _places_id
+label: /places/id
+type: 'canonical_entities:taxonomy_term'
+pattern: '/places/[term:tid]'
+selection_criteria:
+  0b8454b8-2de2-425b-87c6-12c1f6928d0a:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 0b8454b8-2de2-425b-87c6-12c1f6928d0a
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      changsuo: changsuo
+selection_logic: and
+weight: -5
+relationships: {  }

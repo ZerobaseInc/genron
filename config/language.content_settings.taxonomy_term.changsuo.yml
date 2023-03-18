@@ -1,0 +1,11 @@
+uuid: e2c8069a-7bcf-4f1c-85a3-f874bcdd6b14
+langcode: ja
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.changsuo
+id: taxonomy_term.changsuo
+target_entity_type_id: taxonomy_term
+target_bundle: changsuo
+default_langcode: site_default
+language_alterable: false
