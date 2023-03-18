@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.literature.field_literature_references
     - field.field.node.literature.field_literature_series
     - field.field.node.literature.field_literature_type
+    - field.field.node.literature.field_work_type
     - image.style.medium
     - node.type.literature
   module:
@@ -75,5 +76,6 @@ hidden:
   field_literature_references: true
   field_literature_series: true
   field_literature_type: true
+  field_work_type: true
   langcode: true
   links: true

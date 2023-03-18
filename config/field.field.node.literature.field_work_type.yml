@@ -1,0 +1,29 @@
+uuid: a41937da-0229-4de0-8fff-41405b9259b4
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_type
+    - node.type.literature
+    - taxonomy.vocabulary.work_type
+id: node.literature.field_work_type
+field_name: field_work_type
+entity_type: node
+bundle: literature
+label: 作品種別
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      work_type: work_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
