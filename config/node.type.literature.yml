@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:menu_link_content:4714543e-0d6d-419d-a151-906eaf44e5bb'
-name: 文献
+name: 作品
 type: literature
-description: 単行本、雑誌、記事、Webページなど
+description: 文献（単行本、雑誌、記事、Webページなど）およびアート作品などの作品全般
 help: ''
 new_revision: true
 preview_mode: 1

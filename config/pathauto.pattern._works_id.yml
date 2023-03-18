@@ -1,0 +1,22 @@
+uuid: f20ffd01-9f5d-4476-8ec6-ebbf5cf452a3
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+id: _works_id
+label: /works/id
+type: 'canonical_entities:node'
+pattern: 'works/[node:nid]'
+selection_criteria:
+  1e46499d-7199-49d2-9cdb-cb7b814fdd77:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1e46499d-7199-49d2-9cdb-cb7b814fdd77
+    context_mapping:
+      node: node
+    bundles:
+      literature: literature
+selection_logic: and
+weight: -5
+relationships: {  }

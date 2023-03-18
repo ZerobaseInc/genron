@@ -1,0 +1,22 @@
+uuid: 89e5ffef-1c92-4a42-88d0-1225059651b3
+langcode: ja
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: _work_types_id
+label: /work-types/id
+type: 'canonical_entities:taxonomy_term'
+pattern: 'work-types/[term:tid]'
+selection_criteria:
+  6b577c6a-b04a-4e68-b892-f1634b0868b2:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 6b577c6a-b04a-4e68-b892-f1634b0868b2
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      work_type: work_type
+selection_logic: and
+weight: -5
+relationships: {  }
