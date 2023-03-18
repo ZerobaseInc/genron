@@ -11,8 +11,8 @@ id: node.literature.field_literature_date
 field_name: field_literature_date
 entity_type: node
 bundle: literature
-label: 出版日
-description: ''
+label: 発表日
+description: あるいは出版日など
 required: false
 translatable: false
 default_value: {  }

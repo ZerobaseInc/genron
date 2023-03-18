@@ -6,7 +6,6 @@ dependencies:
     - views.view.literature_back_reference
   module:
     - node
-    - system
     - views
   theme:
     - bootstrap
@@ -25,10 +24,6 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '/literatures/*'
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false
