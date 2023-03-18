@@ -11,7 +11,7 @@ dependencies:
     - options
     - user
 id: literatures_page
-label: 文献のリスト
+label: 作品のリスト
 module: views
 description: ''
 tag: ''
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 文献
+      title: 作品
       fields:
         title:
           id: title
@@ -263,7 +263,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: literatures
+      path: works
     cache_metadata:
       max-age: -1
       contexts:
