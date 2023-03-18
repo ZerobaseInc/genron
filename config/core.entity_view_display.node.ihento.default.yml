@@ -94,14 +94,6 @@ content:
     third_party_settings: {  }
     weight: 8
     region: content
-  field_related_contents:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 9
-    region: content
   field_series:
     type: entity_reference_label
     label: above
@@ -117,4 +109,5 @@ content:
     region: content
 hidden:
   field_people: true
+  field_related_contents: true
   langcode: true

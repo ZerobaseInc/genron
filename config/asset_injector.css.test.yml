@@ -6,7 +6,7 @@ dependencies:
     - system
 id: test
 label: 'Override Bootstrap'
-code: |-
+code: |
   h2 {
   	font-size: 20px;
   }
@@ -21,6 +21,8 @@ code: |-
   	margin-top: 2rem;
   }
 
+  /*
+
   .field--items .field--item {
   	display: inline-block;
   }
@@ -28,6 +30,8 @@ code: |-
   .field--items > .field--item + .field--item {
   	margin-left: 1rem;
   }
+
+  */
 
   .contextual-region .view-header {
   	font-weight: bold;
