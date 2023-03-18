@@ -15,13 +15,11 @@ dependencies:
     - field.field.node.literature.field_literature_publisher
     - field.field.node.literature.field_literature_references
     - field.field.node.literature.field_literature_series
-    - field.field.node.literature.field_literature_type
     - field.field.node.literature.field_work_type
     - image.style.medium
     - node.type.literature
   module:
     - datetime
-    - ds
     - image
     - text
     - user
@@ -36,7 +34,7 @@ content:
     settings:
       trim_length: 200
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_author:
     type: entity_reference_label
@@ -46,7 +44,7 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
-    weight: 0
+    weight: 1
     region: content
   field_literature_coverart:
     type: image
@@ -57,7 +55,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_literature_date:
     type: datetime_plain
@@ -65,7 +63,15 @@ content:
     settings:
       timezone_override: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 4
+    region: content
+  field_work_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   field_literature_container: true
@@ -75,7 +81,5 @@ hidden:
   field_literature_publisher: true
   field_literature_references: true
   field_literature_series: true
-  field_literature_type: true
-  field_work_type: true
   langcode: true
   links: true

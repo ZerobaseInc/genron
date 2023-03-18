@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.literature.field_literature_publisher
     - field.field.node.literature.field_literature_references
     - field.field.node.literature.field_literature_series
-    - field.field.node.literature.field_literature_type
     - field.field.node.literature.field_work_type
     - image.style.thumbnail
     - node.type.literature
@@ -132,12 +131,6 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_literature_type:
-    type: options_select
-    weight: 13
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_work_type:
     type: options_select

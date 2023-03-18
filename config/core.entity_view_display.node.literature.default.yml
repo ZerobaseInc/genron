@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.literature.field_literature_publisher
     - field.field.node.literature.field_literature_references
     - field.field.node.literature.field_literature_series
-    - field.field.node.literature.field_literature_type
     - field.field.node.literature.field_work_type
     - image.style.large
     - node.type.literature
@@ -24,7 +23,6 @@ dependencies:
     - image
     - layout_builder
     - link
-    - options
     - text
     - user
 third_party_settings:
@@ -137,13 +135,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 4
-    region: content
-  field_literature_type:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
     region: content
   field_work_type:
     type: entity_reference_label
