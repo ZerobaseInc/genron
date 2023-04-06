@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 id: shouluwenxianrisuto
-label: 文献の収録文献リスト
+label: 作品の収録作品リスト
 module: views
 description: ''
 tag: ''
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 収録文献
+      title: 収録作品
       fields:
         title:
           id: title

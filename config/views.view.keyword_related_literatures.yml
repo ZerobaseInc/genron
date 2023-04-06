@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 id: keyword_related_literatures
-label: キーワードの関連文献
+label: キーワードの関連作品
 module: views
 description: ''
 tag: ''
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: キーワードに関連する文献
+      title: 関連作品
       fields:
         title:
           id: title

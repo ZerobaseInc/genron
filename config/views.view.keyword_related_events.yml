@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: キーワードに関連するイベント
+      title: 関連イベント
       fields:
         title:
           id: title

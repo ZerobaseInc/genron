@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: キーワードに関連する人物
+      title: 関連人物
       fields:
         title:
           id: title

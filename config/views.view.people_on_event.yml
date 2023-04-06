@@ -9,7 +9,7 @@ dependencies:
     - node
     - user
 id: people_on_event
-label: イベントの出演者リスト
+label: イベントの登場人物リスト
 module: views
 description: ''
 tag: ''
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 出演者
+      title: 登場人物
       fields:
         title:
           id: title

@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 id: literature_back_reference
-label: 文献の被参照リスト
+label: 作品の被参照コンテンツリスト
 module: views
 description: ''
 tag: ''
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: この文献を参照しているコンテンツ
+      title: この作品を参照しているコンテンツ
       fields:
         title:
           id: title

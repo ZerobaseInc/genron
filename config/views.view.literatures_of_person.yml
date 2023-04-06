@@ -12,7 +12,7 @@ dependencies:
     - node
     - user
 id: literatures_of_person
-label: 人物の執筆文献リスト
+label: 人物の作品リスト
 module: views
 description: ''
 tag: ''
@@ -25,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 執筆した文献
+      title: 作品
       fields:
         title:
           id: title

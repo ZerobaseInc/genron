@@ -9,7 +9,7 @@ dependencies:
     - node
     - user
 id: references_of_literature
-label: 文献の参考文献リスト
+label: 作品の参考作品リスト
 module: views
 description: ''
 tag: ''

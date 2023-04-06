@@ -11,7 +11,7 @@ dependencies:
     - node
     - user
 id: events_of_person
-label: 人物の登壇イベントリスト
+label: 人物の登場イベントリスト
 module: views
 description: ''
 tag: ''
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 登壇したイベント
+      title: イベント
       fields:
         title:
           id: title
