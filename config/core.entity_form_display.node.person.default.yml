@@ -56,7 +56,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_person_keywords:
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     weight: 26
     region: content
     settings:
@@ -74,14 +74,10 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_profession:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 11
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

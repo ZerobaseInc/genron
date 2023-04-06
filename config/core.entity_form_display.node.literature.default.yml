@@ -87,7 +87,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_literature_keywords:
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     weight: 21
     region: content
     settings:
