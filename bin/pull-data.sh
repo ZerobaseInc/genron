@@ -11,4 +11,6 @@ echo "Importing data into local database..."
 lando drush sql:cli < data/dump.sql
 echo "Rebuilding cache..."
 lando drush cache:rebuild
+echo "Resetting user admin's password 'admin'..."
+lando drush user:password admin "admin"
 echo "Done."
