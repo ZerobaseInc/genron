@@ -1,4 +1,4 @@
-uuid: 78446170-5e82-4a95-a972-43aa5055b4eb
+uuid: 37e3b2fd-9a52-4de9-9a50-0e3afa30dcd3
 langcode: ja
 status: true
 dependencies:
@@ -7,8 +7,8 @@ dependencies:
   module:
     - node
     - user
-id: literature_back_reference
-label: 作品を参照しているコンテンツ
+id: zuopinnobeicanzhaoihentorisuto
+label: 作品を参照しているイベント
 module: views
 description: ''
 tag: ''
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: この作品を参照しているコンテンツ
+      title: この作品を参照しているイベント
       fields:
         title:
           id: title
@@ -110,10 +110,10 @@ display:
           exposed: false
           granularity: second
       arguments:
-        field_literature_references_target_id:
-          id: field_literature_references_target_id
-          table: node__field_literature_references
-          field: field_literature_references_target_id
+        field_related_contents_target_id:
+          id: field_related_contents_target_id
+          table: node__field_related_contents
+          field: field_related_contents_target_id
           relationship: none
           group_type: group
           admin_label: ''
