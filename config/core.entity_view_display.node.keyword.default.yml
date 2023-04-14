@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.keyword.body
+    - field.field.node.keyword.field_keyword_related_keywords
     - field.field.node.keyword.field_pronunciation
     - node.type.keyword
   module:
@@ -20,6 +21,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_keyword_related_keywords:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_pronunciation:
     type: string
