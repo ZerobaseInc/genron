@@ -11,4 +11,4 @@ page:
   front: /node/14
 admin_compact_mode: false
 weight_select_max: 100
-default_langcode: en
+default_langcode: ja
