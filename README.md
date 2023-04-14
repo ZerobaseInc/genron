@@ -36,14 +36,14 @@ GitHubはこちら → [ZerobaseInc/genron](https://github.com/ZerobaseInc/genro
 
 genron.co.jp というドメイン名は、ウェブ上の人文知オーソリティに相応しいものだと思います。以下のようなURI命名規則によって、まさに「名は体を表す」でしょう：
 
-- <https://genron.herokuapp.com/ja/people/hazuma>  
-  → //言論/人物/東浩紀
-- <https://genron.herokuapp.com/ja/works/doubutsuka_suru_postmodern>  
-  → //言論/作品/動物化するポストモダン
-- <https://genron.herokuapp.com/ja/events/genron-cafe-20221027>  
-  → //言論/イベント/ゲンロンカフェ「シラスはウェブのなにをやりなおすのか」
-- <https://genron.herokuapp.com/en/keywords/genron>  
-  → //言論/キーワード/ゲンロン
+- [https://www.genron.co.jp/**people/hazuma**](https://genron.herokuapp.com/people/hazuma)  
+  → //言論/**人物/東浩紀**
+- [https://www.genron.co.jp/**works/doubutsuka_suru_postmodern**](https://genron.herokuapp.com/works/doubutsuka_suru_postmodern)  
+  → //言論/**作品/動物化するポストモダン**
+- [https://www.genron.co.jp/**events/genron_tomonokai_sokai_13**](https://genron.herokuapp.com/events/genron_tomonokai_sokai_13)  
+  → //言論/**イベント/ゲンロン友の会第13期総会**
+- [https://www.genron.co.jp/**keywords/genron**](https://genron.herokuapp.com/keywords/genron)  
+  → //言論/**キーワード/ゲンロン**
 
 
 ### ウェブサイトの要件

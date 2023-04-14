@@ -7,10 +7,6 @@ dependencies:
 id: test
 label: 'Override Bootstrap'
 code: |
-  h2 {
-  	font-size: 20px;
-  }
-
   section {
   	margin-top: 1rem;
   	margin-bottom: 2rem;
@@ -20,18 +16,6 @@ code: |
   	font-size: 120%;
   	margin-top: 2rem;
   }
-
-  /*
-
-  .field--items .field--item {
-  	display: inline-block;
-  }
-
-  .field--items > .field--item + .field--item {
-  	margin-left: 1rem;
-  }
-
-  */
 
   .contextual-region .view-header {
   	font-weight: bold;
