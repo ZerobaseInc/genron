@@ -1,0 +1,28 @@
+uuid: 897e940c-4c37-42a1-905c-2236e4ad2640
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keyword_related_keywords
+    - node.type.keyword
+id: node.keyword.field_keyword_related_keywords
+field_name: field_keyword_related_keywords
+entity_type: node
+bundle: keyword
+label: 関連キーワード
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      keyword: keyword
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

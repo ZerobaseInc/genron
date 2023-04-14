@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.keyword.body
+    - field.field.node.keyword.field_keyword_related_keywords
     - field.field.node.keyword.field_pronunciation
     - node.type.keyword
   module:
@@ -24,6 +25,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_keyword_related_keywords: true
   field_pronunciation: true
   langcode: true
   links: true
