@@ -16,7 +16,7 @@ bundle: user
 label: 写真
 description: あなたの仮想の顔、あるいは写真。
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,20 @@
+uuid: 1338c88a-7174-4e21-a9a5-116492b8fd79
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.image
+  module:
+    - path
+id: media.image.path
+field_name: path
+entity_type: media
+bundle: image
+label: URLエイリアス
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

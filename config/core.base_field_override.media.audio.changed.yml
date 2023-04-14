@@ -1,0 +1,18 @@
+uuid: 0ccab8a6-6d04-4853-8bec-1ea3542e83f6
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.changed
+field_name: changed
+entity_type: media
+bundle: audio
+label: 変更済
+description: メディアアイテムの最終更新日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

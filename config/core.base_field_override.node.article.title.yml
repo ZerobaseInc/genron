@@ -1,0 +1,18 @@
+uuid: 3a952e5d-e02c-4f10-8748-d64d6f73ecd5
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.title
+field_name: title
+entity_type: node
+bundle: article
+label: タイトル
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

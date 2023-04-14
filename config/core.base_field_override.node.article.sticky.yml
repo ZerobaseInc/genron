@@ -1,0 +1,22 @@
+uuid: 18a1face-ed48-491b-83ec-ea85cfc7ee16
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.sticky
+field_name: sticky
+entity_type: node
+bundle: article
+label: リスト上部に固定
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean

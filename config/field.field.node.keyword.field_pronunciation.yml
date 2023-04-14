@@ -12,7 +12,7 @@ bundle: keyword
 label: 読み
 description: ひらがな入力
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

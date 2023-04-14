@@ -1,0 +1,18 @@
+uuid: 74267b03-8456-4b8d-bfaa-5c2ba7a7ab89
+langcode: ja
+status: true
+dependencies:
+  module:
+    - user
+id: user.user.changed
+field_name: changed
+entity_type: user
+bundle: user
+label: 変更済
+description: ユーザーの最終更新日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

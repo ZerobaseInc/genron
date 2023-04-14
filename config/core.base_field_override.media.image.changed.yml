@@ -1,0 +1,18 @@
+uuid: c6c3f081-e1e4-4362-998e-bd25ab76b7ca
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.image
+id: media.image.changed
+field_name: changed
+entity_type: media
+bundle: image
+label: 変更済
+description: メディアアイテムの最終更新日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

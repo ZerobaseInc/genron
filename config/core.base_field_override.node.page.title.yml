@@ -1,0 +1,18 @@
+uuid: cec67df2-bbbb-4f35-9283-2437eb2d9573
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.title
+field_name: title
+entity_type: node
+bundle: page
+label: タイトル
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

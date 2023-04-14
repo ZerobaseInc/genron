@@ -1,0 +1,20 @@
+uuid: 5b1d8c4a-c378-45d6-8b91-a1e8870cb5da
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.name
+field_name: name
+entity_type: media
+bundle: audio
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

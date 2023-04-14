@@ -1,0 +1,18 @@
+uuid: f42120ee-6180-4c1c-9e78-b2b8ec0925fb
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.video
+id: media.video.created
+field_name: created
+entity_type: media
+bundle: video
+label: 投稿日時
+description: メディアアイテムの作成日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

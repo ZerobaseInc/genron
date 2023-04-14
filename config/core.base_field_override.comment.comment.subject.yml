@@ -1,0 +1,18 @@
+uuid: decf5220-5576-42c5-ab9f-588e06d04930
+langcode: ja
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.subject
+field_name: subject
+entity_type: comment
+bundle: comment
+label: 件名
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

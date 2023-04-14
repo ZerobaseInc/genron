@@ -1,0 +1,20 @@
+uuid: bdfe4eb1-47b6-43d9-90d4-ca2402609516
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - path
+id: node.article.path
+field_name: path
+entity_type: node
+bundle: article
+label: URLエイリアス
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

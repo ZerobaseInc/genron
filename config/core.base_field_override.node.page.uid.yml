@@ -1,0 +1,20 @@
+uuid: 8a9c890c-9a64-495c-afe0-0e0ff99d5177
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.uid
+field_name: uid
+entity_type: node
+bundle: page
+label: 投稿者
+description: コンテンツ投稿者のユーザー名。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

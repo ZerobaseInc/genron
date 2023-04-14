@@ -1,0 +1,18 @@
+uuid: 408a9523-a3b7-481a-b894-8587c064b57c
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.created
+field_name: created
+entity_type: node
+bundle: page
+label: 投稿日時
+description: ノードが作成された日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

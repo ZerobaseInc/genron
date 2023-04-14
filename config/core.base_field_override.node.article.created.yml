@@ -1,0 +1,18 @@
+uuid: b42fbd13-0bc6-4919-be77-00447ec8ca58
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.created
+field_name: created
+entity_type: node
+bundle: article
+label: 投稿日時
+description: ノードが作成された日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

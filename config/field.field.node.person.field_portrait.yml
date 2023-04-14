@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_portrait
     - node.type.person
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.person.field_portrait
 field_name: field_portrait
 entity_type: node
@@ -14,7 +21,7 @@ bundle: person
 label: 肖像
 description: 人物の肖像写真。代替テキストには「〇〇の肖像」と入力。
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

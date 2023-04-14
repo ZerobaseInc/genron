@@ -1,0 +1,18 @@
+uuid: 85bb5fb1-875a-4788-86fe-d497c3d0edbb
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+id: media.remote_video.changed
+field_name: changed
+entity_type: media
+bundle: remote_video
+label: 変更済
+description: メディアアイテムの最終更新日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,6 +1,6 @@
 # Genron Omega Prototype
 
-ぼくのかんがえたさいきょうのウェブサイト for ゲンロン
+ぼくのかんがえたさいきょうのゲンロン・ウェブサイト
 
 または、人文知という領域（ドメイン）のコンテンツ構造を、Drupal CMSを用いて勝手にプロトタイピングするデモンストレーション
 
@@ -15,7 +15,7 @@
 - ゲンロンカフェの全イベント（数百？）および全登壇者（数千？）
 - それらの文献やイベントで言及されたキーワード（数千？）
 
-まずはここから → 人物ページ「[東浩紀](https://genron.herokuapp.com/people/hazuma)」
+まずはここから → 人物ページ「[東浩紀](https://genron.herokuapp.com/ja/people/hazuma)」
 
 GitHubはこちら → [ZerobaseInc/genron](https://github.com/ZerobaseInc/genron)
 
@@ -36,14 +36,14 @@ GitHubはこちら → [ZerobaseInc/genron](https://github.com/ZerobaseInc/genro
 
 genron.co.jp というドメイン名は、ウェブ上の人文知オーソリティに相応しいものだと思います。以下のようなURI命名規則によって、まさに「名は体を表す」でしょう：
 
-- [https://www.genron.co.jp/people/hazuma](http://genron.herokuapp.com/people/hazuma)  
+- <https://genron.herokuapp.com/ja/people/hazuma>  
   → //言論/人物/東浩紀
-- [https://www.genron.co.jp/works/literature-hazuma_doubutsuka_suru_postmodern](http://genron.herokuapp.com/works/literature-hazuma_doubutsuka_suru_postmodern)  
+- <https://genron.herokuapp.com/ja/works/doubutsuka_suru_postmodern>  
   → //言論/作品/動物化するポストモダン
-- [https://www.genron.co.jp/events/genron-cafe-20221027](http://genron.herokuapp.com/events/genron-cafe-20221027)  
+- <https://genron.herokuapp.com/ja/events/genron-cafe-20221027>  
   → //言論/イベント/ゲンロンカフェ「シラスはウェブのなにをやりなおすのか」
-- [https://www.genron.co.jp/keywords/correctibility](http://genron.herokuapp.com/keywords/correctibility)  
-  → //言論/キーワード/訂正可能性
+- <https://genron.herokuapp.com/en/keywords/genron>  
+  → //言論/キーワード/ゲンロン
 
 
 ### ウェブサイトの要件
@@ -65,8 +65,8 @@ genron.co.jp というドメイン名は、ウェブ上の人文知オーソリ�
 
 ### 設計メモ
 
-- 作品の参照関係を双方向に辿れる。「参考文献」の逆リンクである「この文献*を*参照している文献」。ブログのトラックバックに相当するもの（例：「[内省と遡行](/works/literature-karatani_naise_to_sokou)」と「[存在論的、郵便的](/works/literature-hazuma_sonzaironteki_yubinteki)」）。
-- 「テキストが参照しているアート作品」「イベントが参照しているアート作品」のように、異なるコンテンツタイプ間の関係性も、双方向に辿れる（例：「[ゲンロン友の会第13期総会](/events/genron_tomonokai_sokai_13)」と「[うさぎ、美術の良識からの逸脱 no.10](/works/yoichi_umetsu-usagi-10)」）。
+- 作品の参照関係を双方向に辿れる。「参考文献」の逆リンクである「この文献*を*参照している文献」。ブログのトラックバックに相当するもの（例：「[内省と遡行](https://genron.herokuapp.com/ja/works/naisei_to_sokou)」と「[存在論的、郵便的](https://genron.herokuapp.com/ja/works/sonzaironteki_yubinteki)」）。
+- 「テキストが参照しているアート作品」「イベントが参照しているアート作品」のように、異なるコンテンツタイプ間の関係性も、双方向に辿れる（例：「[ゲンロン友の会第13期総会](https://genron.herokuapp.com/ja/events/genron_tomonokai_sokai_13)」と「[うさぎ、美術の良識からの逸脱 no.10](https://genron.herokuapp.com/ja/works/yoichi_umetsu-usagi-10)」）。
 - [実装前の手書き設計メモ](https://github.com/ZerobaseInc/genron/wiki/%E8%A8%AD%E8%A8%88%E3%83%A1%E3%83%A2)
 
 ### 参考文献
@@ -153,27 +153,26 @@ TODO: コンテンツをローカル開発環境ないしステージング環�
 
 #### Landoの操作方法
 
-Dockerコンテナの停止
-: `lando stop`
-
-Dockerコンテナの再構築
-: `lando rebuild`
+- Dockerコンテナの停止: `lando stop`
+- Dockerコンテナの再構築: `lando rebuild`
   - .lando.yml や .env の更新を反映します。
   - データは維持されます。
-
-キャッシュ再構築
-: `lando drush cache:rebuild`
+- キャッシュ再構築: `lando drush cache:rebuild`
   - 画面表示がおかしい時などに、キャッシュを再構築します。
-
-初期化・再構築
-: `lando destroy && lando start`
+- 初期化・再構築: `lando destroy && lando start`
   - 必要に応じて、事前に設定やデータを保存してから実行してください。
   - `lando start` 以降の手順は、前述の「ローカル開発環境の起動手順」の通りです。
+- Drupalモジュールのインストール:
+  1. `lando composer require 'drupal/views_taxonomy_term_name_depth:^7.2'`
+  2. `lando drush pm:install views_taxonomy_term_name_depth`
+
 
 #### Herokuの操作方法
 
 本番環境のキャッシュ再構築
-: `heroku run -a genron drush cache:rebuild`
+
+- `heroku run drush cache:rebuild`
+  - 画面表示がおかしい時などに、キャッシュを再構築します。
 
 #### Drupalのバージョンについて
 

@@ -15,7 +15,7 @@ bundle: article
 label: タグ
 description: 'コンマ区切りのリストを入力してください。例: アムステルダム, メキシコシティ, "クリーブランド, オハイオ"'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,18 @@
+uuid: 9294c6cf-a1b2-4126-87aa-c76900a543c2
+langcode: ja
+status: true
+dependencies:
+  config:
+    - shortcut.set.default
+id: shortcut.default.title
+field_name: title
+entity_type: shortcut
+bundle: default
+label: Name
+description: ショートカットの名前。
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

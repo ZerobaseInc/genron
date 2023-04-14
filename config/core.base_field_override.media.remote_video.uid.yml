@@ -1,0 +1,20 @@
+uuid: 3e80623a-afac-487f-9b59-5b423caa5f4b
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+id: media.remote_video.uid
+field_name: uid
+entity_type: media
+bundle: remote_video
+label: 投稿者
+description: 作成者のユーザーID。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

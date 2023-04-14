@@ -1,0 +1,18 @@
+uuid: 32a80e0d-d8b0-4646-9a8e-c1d6c5adfc51
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.created
+field_name: created
+entity_type: media
+bundle: audio
+label: 投稿日時
+description: メディアアイテムの作成日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

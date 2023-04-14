@@ -1,0 +1,18 @@
+uuid: 0cf306f6-2079-48c5-b06d-2986d9d9a5f3
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+id: media.remote_video.created
+field_name: created
+entity_type: media
+bundle: remote_video
+label: 投稿日時
+description: メディアアイテムの作成日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

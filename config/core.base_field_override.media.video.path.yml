@@ -1,0 +1,20 @@
+uuid: ecbe9e43-204e-43ca-b208-95cc85a4b49e
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.video
+  module:
+    - path
+id: media.video.path
+field_name: path
+entity_type: media
+bundle: video
+label: URLエイリアス
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

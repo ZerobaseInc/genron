@@ -1,0 +1,18 @@
+uuid: 418553fc-bd78-44e7-85cb-26ab4bbdd640
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.changed
+field_name: changed
+entity_type: node
+bundle: page
+label: 変更済
+description: ノードが最後に更新された日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed
