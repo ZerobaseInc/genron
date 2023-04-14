@@ -837,3 +837,8 @@ $settings['s3fs.secret_key'] = getenv('S3_SECRET_KEY');
 $config['s3fs.settings']['bucket'] = getenv('S3_BUCKET');
 $settings['s3fs.region'] = getenv('S3_REGION');
 $settings['s3fs.upload_as_private'] = TRUE;
+
+/*
+ * Translations directory.
+ */
+$settings['locale_translate_file_directory'] = 'sites/default/files/translations';

@@ -5,5 +5,5 @@ dependencies: {  }
 id: ja
 label: Japanese
 direction: ltr
-weight: 0
+weight: -10
 locked: false
